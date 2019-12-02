@@ -31,6 +31,10 @@ body {
     padding: 0 15px;
     margin-left: auto;
     margin-right: auto; } }
+img {
+  width: 100%;
+  height: auto; }
+
 .row {
   margin-left: -15px;
   margin-right: -15px; }
@@ -40,7 +44,7 @@ body {
 
 .header {
   background-color: transparent;
-  position: fixed;
+  position: absolute;
   right: 0;
   left: 0;
   padding: 34px 32px;
@@ -162,8 +166,6 @@ body {
 
 .banner {
   height: 100vh;
-  background: url("../../public/images/block1.png") center center no-repeat;
-  background-size: cover;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -184,7 +186,7 @@ body {
     margin-bottom: 32px;
     margin-top: 0;
     max-width: 588px;
-    margin-left: 0;
+    margin-left: -5px;
     padding-left: 0; }
   .banner .banner-text {
     font-family: "Open Sans", sans-serif;
@@ -196,31 +198,101 @@ body {
     margin-bottom: 12px;
     max-width: 490px; }
   .banner .button {
-    margin-left: 9px; }
+    margin-left: 9px;
+    margin-top: 28px; }
   .banner .btn {
-    padding: 18px 43px;
     font-family: "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
     line-height: 25px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
     text-align: center;
     color: #0059CB;
+    background-color: #FFFFFF;
+    position: relative;
+    padding: 18px 57px;
+    max-width: 100%;
     border: 2px solid #0059CB;
-    border-radius: 0;
-    position: relative; }
-    .banner .btn:after {
-      content: "";
-      width: 263px;
-      height: 64px;
-      color: #0059CB;
+    border-radius: 0; }
+    .banner .btn:before {
+      z-index: -1;
       border: 2px solid #0059CB;
-      border-radius: 0;
-      margin-top: 6px;
       position: absolute;
-      z-index: -55555;
+      content: '';
+      top: 5px;
       left: -10px;
-      top: 0; }
+      bottom: -10px;
+      right: 4px; }
+    .banner .btn:after {
+      z-index: -1;
+      position: absolute;
+      content: '';
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #0059CB; }
+  .banner .banner-inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .banner .image {
+    width: 20px;
+    height: 70px;
+    position: absolute;
+    left: calc(50% - 10px);
+    bottom: 208px; }
+  .banner .image-tiger {
+    width: 674px;
+    height: 700px; }
+  .banner .letter {
+    position: absolute;
+    background: #F7F7F7;
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 132px;
+    line-height: 0;
+    color: #F7F7F7; }
+  .banner .r {
+    top: 66px;
+    left: -12px; }
+  .banner .e {
+    bottom: 291px;
+    left: -18px; }
+  .banner .n {
+    top: 174px;
+    right: 38px;
+    opacity: 0.4; }
+  .banner .e-right {
+    bottom: 423px;
+    right: -18px; }
+  .banner .a {
+    left: 192px;
+    bottom: 130px; }
+  .banner .shot-line-left {
+    width: 2px;
+    height: 48px;
+    left: 25%;
+    background: #0059CB;
+    position: absolute;
+    bottom: -20%; }
+  .banner .shot-line-right {
+    position: absolute;
+    width: 2px;
+    height: 48px;
+    right: 25%;
+    background: #0059CB;
+    bottom: -20%; }
   .banner .line {
     width: 1px;
     background-color: #E4E4E4;
@@ -237,6 +309,124 @@ body {
     right: 25%; }
   .banner .line5 {
     right: 0%; }
+  @media (max-width: 1250px) {
+    .banner .image-tiger {
+      width: 674px;
+      height: 430px; } }
+  @media (max-width: 880px) {
+    .banner .image-tiger {
+      width: 674px;
+      height: 337px; } }
+
+.marketing {
+  padding: 64px 0 74px 0;
+  background: url("../../public/images/background.png") center center no-repeat;
+  background-size: cover;
+  overflow: hidden; }
+  .marketing .line {
+    width: 1px;
+    background-color: #E4E4E4;
+    position: absolute;
+    top: -100%;
+    bottom: -100%; }
+  .marketing .line1 {
+    left: 0; }
+  .marketing .line2 {
+    left: 25%; }
+  .marketing .line3 {
+    left: 50%; }
+  .marketing .line4 {
+    right: 25%; }
+  .marketing .line5 {
+    right: 0%; }
+  .marketing .title {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+    color: #FFFFFF; }
+  .marketing .title.right {
+    margin-bottom: 16px; }
+  .marketing .title.left {
+    margin-bottom: 8px; }
+  .marketing .text {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+    color: #FFFFFF; }
+  .marketing .text.right {
+    max-width: 558px;
+    margin-bottom: 40px; }
+  .marketing .text.left {
+    max-width: 486px; }
+  .marketing .image {
+    margin: 16px 0;
+    width: 180px;
+    height: 180px; }
+  .marketing .banner-title {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 98px;
+    line-height: 90px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #0059CB;
+    margin-bottom: 32px;
+    margin-top: 0;
+    max-width: 588px;
+    margin-left: -5px;
+    padding-left: 0; }
+  .marketing .banner-text {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 38px;
+    color: #00295F;
+    margin-bottom: 12px;
+    max-width: 490px; }
+  .marketing .button {
+    margin-left: 9px;
+    margin-top: 28px; }
+  .marketing .btn {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+    color: #0059CB;
+    background-color: #fff !important;
+    position: relative;
+    padding: 18px 47px;
+    max-width: 100%;
+    border: 2px solid #fff;
+    border-radius: 0; }
+    .marketing .btn:before {
+      z-index: 0;
+      border: 2px solid #fff;
+      position: absolute;
+      content: '';
+      top: 5px;
+      left: -10px;
+      bottom: -10px;
+      right: 4px; }
+    .marketing .btn:after {
+      z-index: -1;
+      position: absolute;
+      content: '';
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #0059CB; }
 
 .popup {
   background-color: #fff;
