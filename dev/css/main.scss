@@ -57,14 +57,54 @@ img {
   text-align: center;
 }
 
+.line {
+  width: 1px;
+  background-color: #E4E4E4;
+  //height: 100vh;
+  position: absolute;
+  top: -100%;
+  bottom: -100%;
+}
+
+.line1 {
+  left: 0;
+}
+
+.line2 {
+  left: 25%;
+}
+
+.line3 {
+  left: 50%;
+}
+
+.line4 {
+  right: 25%;
+}
+
+.line5 {
+  right: 0%;
+}
+
+.letter {
+  position: absolute;
+  background: #F7F7F7;
+  font-family: $font_text;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 132px;
+  line-height: 0;
+  color: #F7F7F7;
+}
+
 ////////////////////////HEADER BEGIN////////////////////////
 .header {
-    background-color: transparent;
-    position: absolute;
-    right: 0;
-    left: 0;
-    padding: 34px 32px;
-    z-index: 2;
+  background-color: transparent;
+  position: absolute;
+  right: 0;
+  left: 0;
+  padding: 42px 0;
+  z-index: 2;
 
   .header__inner {
     display: flex;
@@ -360,17 +400,6 @@ img {
     height: 700px;
   }
 
-  .letter {
-    position: absolute;
-    background: #F7F7F7;
-    font-family: $font_text;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 132px;
-    line-height: 0;
-    color: #F7F7F7;
-  }
-
   .r {
     top: 66px;
     left: -12px;
@@ -446,6 +475,12 @@ img {
 
   ////media
 
+  //@media (max-width: 1400px) {
+  //  .a {
+  //   bottom: 6%;
+  //  }
+  //}
+
   @media (max-width: 1250px) {
     .image-tiger {
       width: 674px;
@@ -459,6 +494,68 @@ img {
       height: 337px;
     }
   }
+
+  @media (max-height: 1024px) {
+    .a {
+      bottom: 185px;
+    }
+
+    .shot-line-left, .shot-line-right {
+      bottom: -12%;
+    }
+  }
+
+  @media (max-height: 935px) {
+    .a {
+      bottom: 135px;
+    }
+
+    .shot-line-left, .shot-line-right {
+      bottom: -5%;
+    }
+  }
+
+  @media (max-height: 835px) {
+
+    .image-tiger {
+      height: 590px;
+    }
+
+    .image {
+      bottom: 120px;
+    }
+
+    .a {
+      bottom: 110px;
+    }
+
+    .shot-line-left, .shot-line-right {
+      bottom: -5%;
+    }
+  }
+
+  @media (max-height: 790px) {
+    .a {
+      bottom: 80px;
+    }
+  }
+
+  @media (max-height: 710px) {
+    .a {
+      bottom: 55px;
+    }
+
+    .image {
+      bottom: 65px;
+    }
+
+    .image-tiger {
+      height: 560px;
+    }
+
+
+  }
+
 }
 ////////////////////////BANNER END////////////////////////
 
@@ -610,6 +707,182 @@ img {
 
 }
 ////////////////////////MARKETING END////////////////////////
+
+////////////////////////VIDEO BEGIN////////////////////////
+.video {
+  padding-top: 168px;
+  position: relative;
+  overflow: hidden;
+
+  .caption {
+    font-family: $font_text;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 38px;
+    text-align: center;
+    color: #00295F;
+    margin-bottom: 40px;
+
+    span {
+      color: #0059CB;
+    }
+  }
+
+  .block {
+    min-width: 420px;
+    min-height: 160px;
+    background: #F0F0F0;
+    position: absolute;
+  }
+
+  .block-left {
+    left: 0;
+    bottom: -5%;
+  }
+
+  .block-right {
+    right: 0;
+    bottom: -5%;
+  }
+
+  .container-slider {
+    max-width: 997px;
+    padding: 0 0 0 8px !important;
+    margin-left: auto;
+    margin-right: 8.4%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .video-item {
+    min-width: 486px;
+    min-height: 360px;
+  }
+
+  .video-title {
+    font-family: $font_text;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: center;
+    color: #0059CB;
+    margin-top: 20px;
+  }
+
+  .shot-line-left {
+    width: 2px;
+    height: 48px;
+    left: 25%;
+    background: #0059CB;
+    position: absolute;
+    top: -20%;
+    z-index: 2;
+  }
+
+  .shot-line-right {
+    position: absolute;
+    width: 2px;
+    height: 48px;
+    right: 25%;
+    background: #0059CB;
+    top: -20%;
+    z-index: 2;
+  }
+
+  //slider
+
+  .slick-prev, .slick-next {
+    border: 2px solid #0059CB;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+
+    .fa-chevron-right, .fa-chevron-left {
+      font-size: 20px;
+      color: #0059CB;
+    }
+  }
+
+  .slick-prev {
+    left: -10.2%;
+  }
+
+  .slick-next {
+    right: -10%;
+  }
+
+  .slick-prev:before, .slick-next:before {
+    font-size: 0;
+  }
+
+}
+////////////////////////VIDEO END////////////////////////
+
+////////////////////////TIGER BEGIN////////////////////////
+.tiger {
+  position: relative;
+  padding-top: 168px;
+  overflow: hidden;
+
+  .image {
+    max-width: 1200px;
+    max-height: 666px;
+    position: relative;
+  }
+
+  .shot-line-left {
+    width: 2px;
+    height: 48px;
+    left: 25%;
+    background: #0059CB;
+    position: absolute;
+    top: -15%;
+    z-index: 2;
+  }
+
+  .shot-line-right {
+    position: absolute;
+    width: 2px;
+    height: 48px;
+    right: 25%;
+    background: #0059CB;
+    top: -15%;
+    z-index: 2;
+  }
+
+  .l {
+    top: 37%;
+    left: 16%;
+    //top: 247px;
+    //left: 195px;
+  }
+
+  .e {
+    top: -3%;
+    left: 37%;
+    //top: -23px;
+    //left: 445px;
+  }
+
+  .a {
+    right: 32%;
+    top: 24%;
+    //right: 384px;
+   // top: 158px;
+  }
+
+  .d {
+    right: 2%;
+    top: 39%;
+    //right: 22px;
+    //top: 259px;
+  }
+}
+////////////////////////TIGER END////////////////////////
 
 ////////////////////////POPUP BEGIN////////////////////////
 .popup {
