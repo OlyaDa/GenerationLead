@@ -41,11 +41,11 @@
                 </div>
                 <nav class="main-nav">
                     <ul class=" menu list-reset">
-                        <li><a href="#">Наши услуги</a></li>
-                        <li><a href="#">О нас</a></li>
-                        <li><a href="#">Наши работы</a></li>
-                        <li><a href="#">Отзывы</a></li>
-                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#services" class="nav-link-new">Наши услуги</a></li>
+                        <li><a href="#team" class="nav-link-new">О нас</a></li>
+                        <li><a href="#portfolio" class="nav-link-new">Наши работы</a></li>
+                        <li><a href="#video" class="nav-link-new">Отзывы</a></li>
+                        <li><a href="#footer" class="nav-link-new">Контакты</a></li>
                     </ul>
                 </nav>
                 <span class="toggle-menu">
@@ -105,7 +105,7 @@
 
         <!--.......................MARKETING.......................-->
 
-        <section class="marketing">
+        <section class="marketing" id="marketing">
             <div class="container">
                 <span class="line1 line"></span>
                 <span class="line2 line"></span>
@@ -147,7 +147,7 @@
 
         <!--.......................VIDEO.......................-->
 
-        <section class="video">
+        <section class="video" id="video">
             <span class="block-left block"></span>
             <span class="block-right block"></span>
             <div class="container">
@@ -168,24 +168,36 @@
                 <div class="container-slider slider">
 
                         <div class="item">
-                            <iframe width="486" height="360" src="https://www.youtube.com/embed/--spehyhaOg"
-                                    frameborder="0"
-                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                    allowfullscreen></iframe>
+                            <div class="image">
+                                <img src="images/video2.png" alt="">
+                                <a class="popup-youtube" href="https://www.youtube.com/watch?v=kXYiU_JCYtU">
+                                    <div class="image-play">
+                                        <img src="images/play.png" alt="">
+                                    </div>
+                                </a>
+                            </div>
                             <p class="video-title text-center">Отзыв от компании “Стеклосила”</p>
                         </div>
                         <div class="item">
-                            <iframe width="486" height="360" src="https://www.youtube.com/embed/--spehyhaOg"
-                                    frameborder="0"
-                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                    allowfullscreen></iframe>
+                            <div class="image">
+                                <img src="images/video1.png" alt="">
+                                <a class="popup-youtube" href="https://www.youtube.com/watch?v=kXYiU_JCYtU">
+                                    <div class="image-play">
+                                        <img src="images/play.png" alt="">
+                                    </div>
+                                </a>
+                            </div>
                             <p class="video-title text-center">Отзыв от компании “ДомоКомплект”</p>
                         </div>
                         <div class="item">
-                            <iframe width="486" height="360" src="https://www.youtube.com/embed/--spehyhaOg"
-                                    frameborder="0"
-                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                    allowfullscreen></iframe>
+                            <div class="image">
+                                <img src="images/video1.png" alt="">
+                                <a class="popup-youtube" href="https://www.youtube.com/watch?v=kXYiU_JCYtU">
+                                    <div class="image-play">
+                                        <img src="images/play.png" alt="">
+                                    </div>
+                                </a>
+                            </div>
                             <p class="video-title text-center">Отзыв от компании “Стеклосила”</p>
                         </div>
 
@@ -398,7 +410,7 @@
 
         <!--.......................SERVICES.......................-->
 
-        <section class="services">
+        <section class="services" id="services">
             <div class="container">
 
                 <span class="shot-line-left"></span>
@@ -412,33 +424,38 @@
 
                 <div class="tabs">
                     <div class="row align-items-center">
-                        <div class="col-lg-8">
-                            <div class="holder">
-                                <h2 class="title">Наши Услуги</h2>
-                                <!-- Nav tabs -->
-                                <ul class="tabs__caption list-reset">
-                                        <li class="active item">
-                                            <span class="square"></span> <span>Интернет маркетинг</span>
-                                        </li>
-                                        <li class="item">
-                                            <span class="square"></span> <span>Создание Landing Page</span>
-                                        </li>
-                                        <li class="item">
-                                            <span class="square"></span> <span>Продвижение в Instagram</span>
-                                        </li>
-                                        <li class="item">
-                                            <span class="square"></span> <span>Продвижение в Facebook</span>
-                                        </li>
-                                        <li class="item">
-                                            <span class="square"></span> <span>Cоздание сайта</span>
-                                        </li>
-                                        <li class="item">
-                                            <span class="square"></span> <span>Интернет-магазин</span>
-                                        </li>
-                                        <li class="item">
-                                            <span class="square"></span> <span>Контекстная реклама</span>
-                                        </li>
-                                </ul>
+                        <div class="col-lg-8 ">
+                            <div class="block-for-holder">
+                                <div class="holder">
+
+                                    <h2 class="title">Наши Услуги</h2>
+                                    <!-- Nav tabs -->
+                                    <div class="pos">
+                                    <ul class="tabs__caption list-reset">
+                                            <li class="active item">
+                                                <span class="square"></span> <span>Интернет маркетинг</span>
+                                            </li>
+                                            <li class="item">
+                                                <span class="square"></span> <span>Создание Landing Page</span>
+                                            </li>
+                                            <li class="item">
+                                                <span class="square"></span> <span>Продвижение в Instagram</span>
+                                            </li>
+                                            <li class="item">
+                                                <span class="square"></span> <span>Продвижение в Facebook</span>
+                                            </li>
+                                            <li class="item">
+                                                <span class="square"></span> <span>Cоздание сайта</span>
+                                            </li>
+                                            <li class="item">
+                                                <span class="square"></span> <span>Интернет-магазин</span>
+                                            </li>
+                                            <li class="item">
+                                                <span class="square"></span> <span>Контекстная реклама</span>
+                                            </li>
+                                    </ul>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
@@ -535,7 +552,7 @@
 
         <!--.......................TEAM.......................-->
 
-        <section class="team">
+        <section class="team" id="team">
             <div class="container">
 
                 <span class="shot-line-left"></span>
@@ -595,7 +612,7 @@
 
         <!--.......................PORTFOLIO.......................-->
 
-        <section class="portfolio">
+        <section class="portfolio" id="portfolio">
             <div class="container">
 
                 <span class="block-left block"></span>
@@ -640,57 +657,190 @@
                 </div>
             </div>
         </section>
+
+        <!--.......................GUARANTEE.......................-->
+
+        <section class="guarantee">
+            <div class="container">
+
+                <span class="shot-line-left-top"></span>
+                <span class="shot-line-right-top"></span>
+
+                <span class="shot-line-left-bottom"></span>
+                <span class="shot-line-right-bottom"></span>
+
+                <span class="line1 line"></span>
+                <span class="line2 line"></span>
+                <span class="line3 line"></span>
+                <span class="line4 line"></span>
+                <span class="line5 line"></span>
+
+                <span class="letter g">G</span>
+                <span class="letter t">T</span>
+
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="holder">
+                            <div class="image">
+                                <img src="images/tiger-garan.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <h2 class="caption">
+                            Мы даем четкие <span>гарантии</span> в договоре,
+                            при невыполнении которых
+                            мы обязуемся вернуть Вам деньги.
+                        </h2>
+                        <ul class="list-reset">
+                            <li class="item first">
+                                <span class="square"></span> <span>К сожалению, единственное, за что мы отвечать
+                                не можем - это продажи.</span>
+                            </li>
+                            <li class="item second">
+                                <span class="square"></span> <span>Но мы можем найти точки контакта с Вашими менеджерами
+                                 для улучшения этих показателей.</span>
+                            </li>
+                            <li class="item">
+                                <span class="square"></span> <span>Горячий трафик на Ваш медиа-ресурс с нами будет
+                                обеспечен!</span>
+                            </li>
+                        </ul>
+
+                        <div class="button">
+                            <a class="btn popup-link" href="#">Начать сотрудничество</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <!--.......................FOOTER.......................-->
-    <footer class="footer">
+    <footer class="footer" id="footer">
+        <div class="container">
 
+            <span class="line1 line"></span>
+            <span class="line2 line"></span>
+            <span class="line3 line"></span>
+            <span class="line4 line"></span>
+            <span class="line5 line"></span>
+
+            <span class="bottom-t"></span>
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <form class="order-main">
+                        <h2 class="caption">Остались вопросы?</h2>
+                        <h4 class="form-title">
+                            <span id="customTextForm">
+                                 Закажите бесплатную консультацию
+                            </span>
+                        </h4>
+                        <input placeholder="Ваше Имя" type="text" name="name" required>
+                        <input placeholder="Ваш Телефон" type="tel" name="phone" class="phoneidcl" required>
+                        <textarea placeholder="Ваш Коментарий" type="text" name="text"></textarea>
+                        <input name="order" type="hidden" value="Остались вопросы? Закажите бесплатную консультацию">
+
+                        <button class="disbutt" disabled>
+                            <span class="btn">Заказать консультацию</span>
+                        </button>
+                    </form>
+                </div>
+
+                <div class="col-lg-3">
+                    <h2 class="caption">Наши Контакты</h2>
+                    <div class="footer-title">
+                        Нашы офисы:
+                    </div>
+                    <p class="text">
+                        г. Киев
+                        <span>ул. Московская, 32/2</span>
+                    </p>
+                    <p class="text bottom">
+                        г. Запорожье
+                        <span>ул. Седова, 9</span>
+                    </p>
+                    <div class="footer-title follow">
+                        Подписывайтесь на нас:
+                    </div>
+                    
+                    <div class="social-icon">
+                        <a href="#">
+                            <div class="image-icon">
+                                <img src="images/facebook.png" alt="">
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="image-icon">
+                                <img src="images/instagram.png" alt="">
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="image-icon">
+                                <img src="images/youtube.png" alt="">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="footer-title tel">
+                        Телефон:
+                    </div>
+                    <a href="tel:+38050341592" class="phone"> +38 (050) 341 59 52 </a>
+                    <a href="tel:+38050341592" class="phone"> +38 (050) 341 59 52 </a>
+                    <a href="tel:+38050341592" class="phone"> +38 (050) 341 59 52 </a>
+                </div>
+            </div>
+        </div>
     </footer>
 
     <!--/////pop-up-->
-    <div id="popup" class="mfp-hide popup">
-        <form class="order-main">
-            <h4 class="form-title text-center">
-                <span id="customTextForm">
-                    Заполните форму и получите  бесплатно чек-лист на почту
-                </span>
-            </h4>
-            <label for="name">Укажите ваше имя</label>
-            <input id="name" placeholder="Имя" type="text" name="name" required>
+    <!--<div id="popup" class="mfp-hide popup">-->
+        <!--<form class="order-main">-->
+            <!--<h4 class="form-title text-center">-->
+                <!--<span id="customTextForm3">-->
+                    <!--Заполните форму и получите  бесплатно чек-лист на почту-->
+                <!--</span>-->
+            <!--</h4>-->
+            <!--<label for="name">Укажите ваше имя</label>-->
+            <!--<input id="name" placeholder="Имя" type="text" name="name" required>-->
 
-            <label for="phone">Укажите ваш телефон</label>
-            <input id="phone" placeholder="Телефон" type="tel" name="phone" class="phoneidcl" required>
+            <!--<label for="phone">Укажите ваш телефон</label>-->
+            <!--<input id="phone" placeholder="Телефон" type="tel" name="phone" class="phoneidcl" required>-->
 
-            <label for="email">Укажите ваш email</label>
-            <input id="email" placeholder="E-mail" type="text" name="email" required>
-            <input name="order" type="hidden" id="input_order">
+            <!--<label for="email">Укажите ваш email</label>-->
+            <!--<input id="email" placeholder="E-mail" type="text" name="email" required>-->
+            <!--<input name="order" type="hidden" id="input_order">-->
 
-            <button class="btn disbutt" disabled>
-                <span>ОТПРАВИТЬ</span>
-            </button>
-        </form>
-    </div>
+            <!--<button class="btn disbutt" disabled>-->
+                <!--<span>ОТПРАВИТЬ</span>-->
+            <!--</button>-->
+        <!--</form>-->
+    <!--</div>-->
 
-    <div id="popup2" class="mfp-hide popup">
-        <form class="order-main">
-            <h4 class="form-title text-center">
-                                    <span id="customTextForm2">
-                                        Заполните форму и получите  бесплатно чек-лист на почту
-                                    </span>
-            </h4>
-            <label for="name2">Укажите ваше имя</label>
-            <input id="name2" placeholder="Имя" type="text" name="name" required>
+    <!--<div id="popup2" class="mfp-hide popup">-->
+        <!--<form class="order-main">-->
+            <!--<h4 class="form-title text-center">-->
+                                    <!--<span id="customTextForm2">-->
+                                        <!--Заполните форму и получите  бесплатно чек-лист на почту-->
+                                    <!--</span>-->
+            <!--</h4>-->
+            <!--<label for="name2">Укажите ваше имя</label>-->
+            <!--<input id="name2" placeholder="Имя" type="text" name="name" required>-->
 
-            <label for="phone2">Укажите ваш телефон</label>
-            <input id="phone2" placeholder="Телефон" type="tel" name="phone" class="phoneidcl" required>
-            <input name="order" type="hidden" id="input_order2">
-            <!--<label for="email2">Укажите ваш email</label>-->
-            <!--<input id="email2" placeholder="E-mail" type="text" name="email" required>-->
+            <!--<label for="phone2">Укажите ваш телефон</label>-->
+            <!--<input id="phone2" placeholder="Телефон" type="tel" name="phone" class="phoneidcl" required>-->
+            <!--<input name="order" type="hidden" id="input_order2">-->
+            <!--&lt;!&ndash;<label for="email2">Укажите ваш email</label>&ndash;&gt;-->
+            <!--&lt;!&ndash;<input id="email2" placeholder="E-mail" type="text" name="email" required>&ndash;&gt;-->
 
-            <button class="btn disbutt" disabled>
-                <span>ОТПРАВИТЬ</span>
-            </button>
-        </form>
-    </div>
+            <!--<button class="btn disbutt" disabled>-->
+                <!--<span>ОТПРАВИТЬ</span>-->
+            <!--</button>-->
+        <!--</form>-->
+    <!--</div>-->
     <!--/////pop-up end-->
 
 </div>
@@ -717,6 +867,8 @@
 <script src="js/jquery.magnific-popup.min.js"></script>
 <!-- Input Mask -->
 <script src="js/jquery.inputmask.bundle.min.js"></script>
+<!-- Page Scroll -->
+<script src="js/jquery.malihu.PageScroll2id.min.js"></script>
 <!-- Main JS -->
 <script src="js/main.js"></script>
 </body>
