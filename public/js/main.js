@@ -24,23 +24,43 @@ $('.slider').slick({
     infinite: true,
 });
 
-$('.owl-carousel').owlCarousel({
-    items:2,
-    margin:10,
-    nav:true,
-    // merge:true,
-    loop:true,
-    video:true,
-    // lazyLoad:true,
-    // center:false,
-    videoWidth: 486, // Default false; Type: Boolean/Number
-    videoHeight: 360, // Default false; Type: Boolean/Number
-    // responsive:{
-    //     480:{
-    //         items:2
-    //     },
-    //     600:{
-    //         items:4
-    //     }
-    // }
-})
+$('.cases-slider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    prevArrow:'<button class="slick-arrow slick-prev"> <i class="fas fa-chevron-left"></i> </button>',
+    nextArrow:'<button class="slick-arrow slick-next"> <i class="fas fa-chevron-right"></i> </button>',
+    autoplay: false,
+    autoplaySpeed: 1500,
+    infinite: true,
+});
+
+$('.team-slider').slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    prevArrow:'<button class="slick-arrow slick-prev"> <i class="fas fa-chevron-left"></i> </button>',
+    nextArrow:'<button class="slick-arrow slick-next"> <i class="fas fa-chevron-right"></i> </button>',
+    autoplay: false,
+    autoplaySpeed: 1500,
+});
+
+$('.portfolio-slider').slick({
+    slidesToShow: 2,
+    slidesToScroll: 2,
+    prevArrow:'<button class="slick-arrow slick-prev"> <i class="fas fa-chevron-left"></i> </button>',
+    nextArrow:'<button class="slick-arrow slick-next"> <i class="fas fa-chevron-right"></i> </button>',
+    autoplay: false,
+    autoplaySpeed: 1500,
+    infinite: true,
+});
+
+
+(function($) {
+    $(function() {
+        $('ul.tabs__caption').on('click', 'li:not(.active)', function() {
+            $(this)
+                .addClass('active').siblings().removeClass('active')
+                .closest('div.tabs').find('div.tabs__content').removeClass('active').eq($(this).index()).addClass('active');
+        });
+    });
+})(jQuery);
