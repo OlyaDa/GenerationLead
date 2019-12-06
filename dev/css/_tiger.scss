@@ -1,0 +1,73 @@
+//////////////////////////TIGER BEGIN////////////////////////
+$font_text: 'Open Sans', sans-serif;
+
+.tiger {
+  position: relative;
+  padding-top: 168px;
+  overflow: hidden;
+
+  .image {
+    max-width: 1200px;
+    max-height: 689px;
+    position: relative;
+  }
+
+  .shot-line-left {
+    width: 2px;
+    height: 48px;
+    left: 25%;
+    background: #0059CB;
+    position: absolute;
+    top: -15%;
+    z-index: 2;
+  }
+
+  .shot-line-right {
+    position: absolute;
+    width: 2px;
+    height: 48px;
+    right: 25%;
+    background: #0059CB;
+    top: -15%;
+    z-index: 2;
+  }
+
+  .l {
+    top: 48%;
+    left: 15%;
+    //top: 247px;
+    //left: 195px;
+  }
+
+  .e {
+    top: 9%;
+    left: 36%;
+    //top: -23px;
+    //left: 445px;
+  }
+
+  .a {
+    right: 32%;
+    top: 35%;
+    //right: 384px;
+    // top: 158px;
+  }
+
+  .d {
+    right: 1%;
+    top: 49%;
+    //right: 22px;
+    //top: 259px;
+  }
+
+  .line {
+    background-color: #E4E4E4;
+  }
+
+  .letter {
+    z-index: -2;
+  }
+
+
+}
+//////////////////////////TIGER END////////////////////////

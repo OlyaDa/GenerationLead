@@ -1,0 +1,115 @@
+//////////////////////////PORTFOLIO BEGIN////////////////////////
+$font_text: 'Open Sans', sans-serif;
+
+.portfolio {
+  padding-bottom: 0;
+  padding-top: 150px;
+  overflow: hidden;
+  position: relative;
+
+  .shot-line-left {
+    width: 2px;
+    height: 48px;
+    left: 21%;
+    background: #0059CB;
+    position: absolute;
+    top: -24%;
+    z-index: 2;
+  }
+
+  .shot-line-right {
+    position: absolute;
+    width: 2px;
+    height: 48px;
+    right: 21%;
+    background: #0059CB;
+    top: -21%;
+    z-index: 2;
+  }
+
+  .block {
+    position: absolute;
+    height: 160px;
+    width: 50%;
+    background: #F0F0F0;
+  }
+
+  .block-left {
+    left: 0;
+    top: 15%;
+  }
+
+  .block-right {
+    right: 0;
+    bottom: 0;
+  }
+
+  .caption {
+    font-family: $font_text;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 38px;
+    color: #00295F;
+    margin-bottom: 40px;
+
+    span {
+      color: #0059CB;
+    }
+  }
+
+  .image {
+    max-width: 486px;
+    max-height: 360px;
+  }
+
+  .container-slider {
+    max-width: 1020px;
+    //padding: 0 0 0 8px !important;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .item {
+    margin: 0 20px;
+  }
+
+  .item.odd {
+    margin-top: 74px;
+  }
+
+  .line {
+    background-color: #E4E4E4;
+  }
+
+  //slider
+
+  .slick-prev, .slick-next {
+    border: 2px solid #0059CB;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+
+    .fa-chevron-right, .fa-chevron-left {
+      font-size: 20px;
+      color: #0059CB;
+    }
+  }
+
+  .slick-prev {
+    left: -11.2%;
+  }
+
+  .slick-next {
+    right: -11.2%;
+  }
+
+  .slick-prev:before, .slick-next:before {
+    font-size: 0;
+  }
+}
+//////////////////////////PORTFOLIO END////////////////////////

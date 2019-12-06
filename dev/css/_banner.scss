@@ -1,0 +1,287 @@
+////////////////////////BANNER BEGIN////////////////////////
+$font_text: 'Open Sans', sans-serif;
+
+.banner {
+  height: 100vh;
+  //background: url("../../public/images/block1.png") center center no-repeat;
+  //background-size: cover;
+  //padding: 3% 0 0 10%;
+  position: relative;
+  display: flex;
+  //align-items: center;
+  overflow: hidden;
+
+  .banner-title {
+    font-family: $font_text;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 100px;
+    line-height: 87px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #0059CB;
+    margin-bottom: 12px;
+    margin-top: 0;
+    max-width: 588px;
+    margin-left: -5px;
+    padding-left: 0;
+
+    span {
+      display: block;
+      font-size: 70px;
+    }
+  }
+
+  .banner-body {
+    margin-top: 122px;
+  }
+
+  .banner-text {
+    font-family: $font_text;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 38px;
+    color: #00295F;
+    margin-bottom: 12px;
+    max-width: 490px;
+  }
+  .button {
+    margin-left: 9px;
+    margin-top: 30px;
+  }
+
+  .btn {
+    font-family: $font_text;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    align-items: center;
+    text-align: center;
+    color: #0059CB;
+    //background-color: #FFFFFF;
+    position: relative;
+    padding: 15px 57px;
+    max-width: 100%;
+    border: 2px solid #0059CB;
+    border-radius: 0;
+
+    &:before {
+      z-index: -1;
+      border: 2px solid #0059CB;
+      position: absolute;
+      content: '';
+      top: 5px;
+      left: -10px;
+      bottom: -10px;
+      right: 4px;
+    }
+
+    &:after {
+      z-index: -1;
+      position: absolute;
+      content: '';
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #fff;
+    }
+    &:hover {
+      background: #0059CB;
+      color: #FFFFFF;
+      transition: .3s;
+    }
+  }
+
+
+
+  .banner-inner {
+    display: flex;
+    margin-top: 116px;
+    //justify-content: space-between;
+    //align-items: center;
+  }
+
+  .image {
+    width: 20px;
+    height: 70px;
+    position: absolute;
+    left: calc(50% - 10px);
+    bottom: 208px;
+    img {
+      animation: move 1s infinite ease-in-out;
+      position: relative;
+    }
+  }
+
+  @keyframes move {
+    from {
+      bottom: 10px;
+    }
+    to {
+      bottom: -10px;
+    }
+  }
+
+  .image-tiger {
+    width: 720px;
+    padding-left: 23px;
+    //height: 700px;
+  }
+
+  .r {
+    top: 12%;
+    left: -12%;
+  }
+
+  .e {
+    bottom: 34%;
+    left: -13%;
+  }
+
+  .n {
+    opacity: 0.4;
+    top: 24%;
+    right: -7%;
+  }
+
+  .e-right {
+    bottom: 46%;
+    right: -13%;
+  }
+
+  .a {
+    bottom: 19%;
+    left: 6%;
+  }
+
+  .shot-line-left {
+    width: 2px;
+    height: 48px;
+    left: 25%;
+    background: #0059CB;
+    position: absolute;
+    bottom: -20%;
+  }
+
+  .shot-line-right {
+    position: absolute;
+    width: 2px;
+    height: 48px;
+    right: 25%;
+    background: #0059CB;
+    bottom: -20%;
+  }
+
+  .line {
+    background-color: #E4E4E4;
+  }
+
+  //
+  //.line1 {
+  //  left: 0;
+  //}
+  //
+  //.line2 {
+  //  left: 25%;
+  //}
+  //
+  //.line3 {
+  //  left: 50%;
+  //}
+  //
+  //.line4 {
+  //  right: 25%;
+  //}
+  //
+  //.line5 {
+  //  right: 0;
+  //}
+
+  ////media
+
+  //@media (max-width: 1400px) {
+  //  .a {
+  //   bottom: 6%;
+  //  }
+  //}
+
+  @media (max-width: 1250px) {
+    .image-tiger {
+      width: 674px;
+      height: 430px;
+    }
+  }
+
+  @media (max-width: 880px) {
+    .image-tiger {
+      width: 674px;
+      height: 337px;
+    }
+  }
+
+  @media (max-height: 1024px) {
+    .shot-line-left, .shot-line-right {
+      bottom: -12%;
+    }
+  }
+
+  @media (max-height: 970px) {
+    .r {
+      top: -12%;
+    }
+  }
+
+  @media (max-height: 935px) {
+    .shot-line-left, .shot-line-right {
+      bottom: -5%;
+    }
+    .a {
+      bottom: -5%;
+    }
+    .r {
+      top: -8%;
+    }
+  }
+
+  @media (max-height: 870px) {
+    .a {
+      bottom: 0;
+    }
+    .r {
+      top: -3%;
+    }
+  }
+
+  @media (max-height: 835px) {
+
+    .image-tiger {
+      height: 590px;
+    }
+
+    .image {
+      bottom: 120px;
+    }
+
+    .shot-line-left, .shot-line-right {
+      bottom: -5%;
+    }
+  }
+
+  @media (max-height: 790px) {
+  }
+
+  @media (max-height: 710px) {
+    .image {
+      bottom: 65px;
+    }
+
+    .image-tiger {
+      height: 560px;
+    }
+  }
+
+}
+//////////////////////////BANNER END////////////////////////

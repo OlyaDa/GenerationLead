@@ -1,0 +1,124 @@
+//////////////////////////TEAM BEGIN////////////////////////
+$font_text: 'Open Sans', sans-serif;
+
+.team {
+  padding-top: 168px;
+  overflow: hidden;
+
+  .shot-line-left {
+    width: 2px;
+    height: 48px;
+    left: 21%;
+    background: #0059CB;
+    position: absolute;
+    top: -24%;
+    z-index: 2;
+  }
+
+  .shot-line-right {
+    position: absolute;
+    width: 2px;
+    height: 48px;
+    right: 21%;
+    background: #0059CB;
+    top: -21%;
+    z-index: 2;
+  }
+
+  .caption {
+    font-family: $font_text;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 38px;
+    color: #00295F;
+    margin-bottom: 40px;
+
+    span {
+      color: #0059CB;
+    }
+  }
+
+  .image {
+    max-width: 314px;
+    max-height: 340px;
+    position: relative;
+      &:before {
+        content: "";
+        background: linear-gradient(180deg, rgba(0, 89, 203, 0) 46.23%, rgba(0, 41, 95, 0.6) 100%, rgba(0, 89, 203, 0.6) 100%);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+  }
+
+  .container-slider {
+   // max-width: 980px;
+    max-width: 1024px;
+    //padding: 0 0 0 8px !important;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .item {
+    margin: 0 13.5px;
+  }
+
+  .title {
+    font-family: $font_text;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+    color: #0059CB;
+    margin-bottom: 9px;
+  }
+
+  .text {
+    font-family: $font_text;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    color: #00295F;
+  }
+
+  .line {
+    background-color: #E4E4E4;
+  }
+
+  //slider
+
+  .slick-prev, .slick-next {
+    border: 2px solid #0059CB;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+
+    .fa-chevron-right, .fa-chevron-left {
+      font-size: 20px;
+      color: #0059CB;
+    }
+  }
+
+  .slick-prev {
+    left: -8.5%;
+    top: 37.5%;
+  }
+
+  .slick-next {
+    right: -8.5%;
+    top: 37.5%;
+  }
+
+  .slick-prev:before, .slick-next:before {
+    font-size: 0;
+  }
+}
+//////////////////////////TEAM END////////////////////////

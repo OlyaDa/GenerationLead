@@ -1,0 +1,166 @@
+//////////////////////////GUARANTEE BEGIN////////////////////////
+
+$font_text: 'Open Sans', sans-serif;
+
+.guarantee {
+  padding-top: 209px;
+  padding-bottom: 210px;
+  overflow: hidden;
+  position: relative;
+
+  .shot-line-left-top {
+    width: 2px;
+    height: 48px;
+    left: 25%;
+    background: #0059CB;
+    position: absolute;
+    top: -28%;
+    z-index: 2;
+  }
+
+  .shot-line-right-top {
+    position: absolute;
+    width: 2px;
+    height: 48px;
+    right: 25%;
+    background: #0059CB;
+    top: -28%;
+    z-index: 2;
+  }
+
+  .shot-line-left-bottom {
+    width: 2px;
+    height: 48px;
+    left: 25%;
+    background: #0059CB;
+    position: absolute;
+    bottom: -28%;
+    z-index: 2;
+  }
+
+  .shot-line-right-bottom {
+    position: absolute;
+    width: 2px;
+    height: 48px;
+    right: 25%;
+    background: #0059CB;
+    bottom: -28%;
+    z-index: 2;
+  }
+
+  .g {
+    //left: 160px;
+    //top: 25px;
+    left: 9%;
+    top: 2%;
+  }
+
+  .t {
+    right: 0;
+    bottom: -45%;
+  }
+
+  .caption {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 35px;
+    color: #00295F;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+    margin-left: -5px;
+    .color {
+      color: #0059CB;
+    }
+    .br {
+      display: block;
+    }
+  }
+
+  .square {
+    height: 8px;
+    width: 8px;
+    background: #0059CB;
+    display: inline-block;
+    //margin-right: 8px;
+  }
+
+  .item {
+    font-family: $font_text;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    color: #00295F;
+    margin-bottom: 19px;
+  }
+
+  .item.first {
+    max-width: 455px;
+  }
+
+  .button {
+    margin-left: 9px;
+    margin-top: 37px;
+  }
+
+  .btn {
+    font-family: $font_text;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    align-items: center;
+    text-align: center;
+    color: #0059CB;
+    position: relative;
+    padding: 15px 35px;
+    max-width: 100%;
+    border: 2px solid #0059CB;
+    border-radius: 0;
+
+    &:before {
+      z-index: -1;
+      border: 2px solid #0059CB;
+      position: absolute;
+      content: '';
+      top: 5px;
+      left: -10px;
+      bottom: -10px;
+      right: 4px;
+    }
+
+    &:after {
+      z-index: -1;
+      position: absolute;
+      content: '';
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #fff;
+    }
+    &:hover {
+      background: #0059CB;
+      color: #FFFFFF;
+      transition: .3s;
+    }
+  }
+
+  .image {
+    max-width: 708px;
+    max-height: 488px;
+    left: -19%;
+    position: absolute;
+    bottom: -238px;
+  }
+
+  .holder {
+    position: relative;
+  }
+
+  .line {
+    background-color: #E4E4E4;
+  }
+}
+//////////////////////////GUARANTEE END////////////////////////

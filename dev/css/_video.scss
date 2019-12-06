@@ -1,0 +1,148 @@
+//////////////////////////VIDEO BEGIN////////////////////////
+$font_text: 'Open Sans', sans-serif;
+
+.video {
+  padding-top: 168px;
+  padding-bottom: 45px;
+  position: relative;
+  overflow: hidden;
+
+  .caption {
+    font-family: $font_text;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 38px;
+    text-align: center;
+    color: #00295F;
+    margin-bottom: 40px;
+
+    span {
+      color: #0059CB;
+    }
+  }
+
+  .block {
+    min-width: 420px;
+    min-height: 160px;
+    background: #F0F0F0;
+    position: absolute;
+  }
+
+  .block-left {
+    left: 0;
+    bottom: 0;
+  }
+
+  .block-right {
+    right: 0;
+    bottom: 0;
+  }
+
+  .container-slider {
+    max-width: 1020px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  //.video-item {
+  //  min-width: 486px;
+  //  min-height: 360px;
+  //}
+
+  .video-title {
+    font-family: $font_text;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: center;
+    color: #0059CB;
+    margin-top: 18px;
+  }
+
+  .shot-line-left {
+    width: 2px;
+    height: 48px;
+    left: 25%;
+    background: #0059CB;
+    position: absolute;
+    top: -20%;
+    z-index: 2;
+  }
+
+  .shot-line-right {
+    position: absolute;
+    width: 2px;
+    height: 48px;
+    right: 25%;
+    background: #0059CB;
+    top: -20%;
+    z-index: 2;
+  }
+
+  .item {
+    margin: 0 12px;
+  }
+
+  .image {
+    max-width: 486px;
+    max-height: 360px;
+    position: relative;
+    &:before {
+      content: "";
+      background: linear-gradient(180deg, rgba(0, 89, 203, 0) 0%, rgba(0, 41, 95, 0.6) 100%, rgba(0, 89, 203, 0.6) 100%);
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+  }
+
+  .image-play {
+    max-width: 68px;
+    max-height: 68px;
+    position: absolute;
+    top: calc(50% - 34px);
+    left: calc(50% - 34px);
+  }
+
+  .line {
+    background-color: #E4E4E4;
+  }
+
+  //slider
+
+  .slick-prev, .slick-next {
+    border: 2px solid #0059CB;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+
+    .fa-chevron-right, .fa-chevron-left {
+      font-size: 20px;
+      color: #0059CB;
+    }
+  }
+
+  .slick-prev {
+    left: -8.7%;
+    top: 41%
+  }
+
+  .slick-next {
+    right: -8.7%;
+    top: 41%
+  }
+
+  .slick-prev:before, .slick-next:before {
+    font-size: 0;
+  }
+
+}
+//////////////////////////VIDEO END////////////////////////
