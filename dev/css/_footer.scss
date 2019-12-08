@@ -17,7 +17,7 @@ $font_text: 'Open Sans', sans-serif;
     width: 37px;
     position: absolute;
     right: 11%;
-    top: 0%;
+    top: 0;
   }
 
   .caption {
@@ -58,7 +58,7 @@ $font_text: 'Open Sans', sans-serif;
 
   ::-webkit-input-placeholder {
     -webkit-text-security: none;
-    color:  #FAFAFA;
+    color: #FAFAFA;
     pointer-events: none !important;
   }
 
@@ -128,7 +128,7 @@ $font_text: 'Open Sans', sans-serif;
     font-size: 18px;
     line-height: 28px;
     color: #FAFAFA;
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 
   .text {
@@ -141,6 +141,10 @@ $font_text: 'Open Sans', sans-serif;
     span {
       display: block;
     }
+  }
+
+  .follow-ours-small {
+    display: none;
   }
 
   .text.bottom {
@@ -159,8 +163,8 @@ $font_text: 'Open Sans', sans-serif;
   }
 
   .footer-title.tel {
-    margin-top: 48px;
-    margin-left: 0px;
+    margin-top: 57px;
+    margin-left: 0;
     margin-bottom: 6px;
   }
 
@@ -180,6 +184,92 @@ $font_text: 'Open Sans', sans-serif;
 
   .line {
     background-color: rgba(228, 228, 228, 0.2);
+    z-index: 1;
+  }
+
+  ///media
+  @media (max-width: 991px) {
+    input, textarea {
+      width: 100%;
+    }
+    .btn {
+      padding: 0;
+    }
+  }
+
+  @media (max-width: 767px) {
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: baseline;
+    }
+    padding: 41px 0 53px 0;
+    .form-title {
+      font-size: 16px;
+      line-height: 22px;
+      margin-bottom: 22px;
+    }
+    .caption {
+      margin-bottom: 1px;
+    }
+
+    input, textarea {
+      font-size: 14px;
+      line-height: 28px;
+      max-width: 384px;
+      padding: 4px 12px;
+    }
+    textarea {
+      height: 77px;
+    }
+
+    button {
+      margin: 11px 0 46px 0;
+      max-width: 384px;
+    }
+
+    .btn {
+      font-size: 16px;
+
+      padding: 14px 38px;
+      line-height: 22px;
+    }
+
+    .caption.contact {
+      margin-bottom: 14px;
+    }
+    .footer-title, .text {
+      font-size: 16px;
+      line-height: 26px;
+    }
+    .footer-title {
+      margin-bottom: 8px;
+    }
+    .follow-ours-desk {
+      display: none;
+    }
+    .follow-ours-small {
+      display: block;
+      margin-top: 23px;
+    }
+    .text.bottom {
+      margin-bottom: -30px;
+    }
+    .footer .phone {
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
+
+  @media (max-width: 410px) {
+    input, textarea {
+      font-size: 14px;
+      line-height: 28px;
+      width: 100%;
+      padding: 4px 12px;
+    }
   }
 }
+
 //////////////////////////FOOTER END////////////////////////

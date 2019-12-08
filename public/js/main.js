@@ -1,11 +1,18 @@
 
+
+//input mask
+
 $('.phoneidcl').inputmask('+38(999) 999-99-99',{ "oncomplete": function(){
         $(".disbutt").prop("disabled", false);
     }, "onincomplete": function(){ $(".disbutt").prop("disabled", true); } });
 
+//modal window
+
 $(document).ready(function() {
     $('.popup-link').magnificPopup();
 });
+
+//mobile menu (header)
 
 $(function(){
     $('.toggle-menu').on('click',function(){
@@ -62,6 +69,8 @@ $('.cases-slider').slick({
     ]
 });
 
+//slider for "our team"
+
 $('.team-slider').slick({
     infinite: true,
     slidesToShow: 3,
@@ -70,7 +79,21 @@ $('.team-slider').slick({
     nextArrow:'<button class="slick-arrow slick-next"> <i class="fas fa-chevron-right"></i> </button>',
     autoplay: false,
     autoplaySpeed: 1500,
+    responsive: [
+        {
+            breakpoint: 577,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                infinite: true,
+                dots: true,
+                arrows: false,
+            }
+        },
+    ]
 });
+
+//slider for "our portfolio"
 
 $('.portfolio-slider').slick({
     slidesToShow: 2,
@@ -80,8 +103,21 @@ $('.portfolio-slider').slick({
     autoplay: false,
     autoplaySpeed: 1500,
     infinite: true,
+    responsive: [
+        {
+            breakpoint: 577,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                infinite: true,
+                dots: true,
+                arrows: false,
+            }
+        },
+    ]
 });
 
+//tabs
 
 (function($) {
     $(function() {
@@ -92,6 +128,8 @@ $('.portfolio-slider').slick({
         });
     });
 })(jQuery);
+
+//scroll
 
 $('.nav-link-new').mPageScroll2id();
 
@@ -107,6 +145,7 @@ $(document).ready(function() {
     });
 });
 
+//accardion for mobile version section "services"
 
 const accardionToggle = (slideMenu) => (e) => {
     slideMenu.forEach((links) => {

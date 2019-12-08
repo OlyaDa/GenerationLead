@@ -2,14 +2,14 @@
 $font_text: 'Open Sans', sans-serif;
 
 .marketing {
-  padding: 64px 0 78px 0;
+  padding: 67px 0 69px 0;
   background: url("../../public/images/background.png") center center no-repeat;
   background-size: cover;
   overflow: hidden;
   z-index: -999;
 
   .line {
-    background-color: black;
+    //background-color: black;
     background-color: rgba(228, 228, 228, 0.2);
     z-index: 2;
   }
@@ -185,4 +185,5 @@ $font_text: 'Open Sans', sans-serif;
     }
   }
 }
+
 ////////////////////////MARKETING END////////////////////////

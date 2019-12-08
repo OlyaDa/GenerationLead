@@ -2,7 +2,7 @@
 $font_text: 'Open Sans', sans-serif;
 
 .video {
-  padding-top: 168px;
+  padding-top: 163px;
   padding-bottom: 45px;
   position: relative;
   overflow: hidden;
@@ -69,7 +69,7 @@ $font_text: 'Open Sans', sans-serif;
     left: 25%;
     background: #0059CB;
     position: absolute;
-    top: -20%;
+    top: -220%;
     z-index: 2;
   }
 
@@ -79,7 +79,7 @@ $font_text: 'Open Sans', sans-serif;
     height: 48px;
     right: 25%;
     background: #0059CB;
-    top: -20%;
+    top: -220%;
     z-index: 2;
   }
 
@@ -199,11 +199,6 @@ $font_text: 'Open Sans', sans-serif;
 
   @media (max-width: 576px) {
 
-    .hernia {
-      width: 486px;
-      height: 360px;
-    }
-
     .image {
       max-width: 100%;
       max-height: 100%;
@@ -216,8 +211,8 @@ $font_text: 'Open Sans', sans-serif;
     .video-title {
       font-size: 18px;
       line-height: 25px;
-      margin-top: 56px;
-      margin-bottom: 0;
+      max-width: 305px;
+      margin: 43px auto 0;
     }
 
     .shot-line-right {
@@ -226,7 +221,7 @@ $font_text: 'Open Sans', sans-serif;
       height: 32px;
       right: 25%;
       background: #0059CB;
-      top: -16%;
+      top: -71%;
       z-index: 2;
     }
 
@@ -236,7 +231,7 @@ $font_text: 'Open Sans', sans-serif;
       height: 32px;
       left: 25%;
       background: #0059CB;
-      top: -16%;
+      top: -71%;
       z-index: 2;
     }
 
@@ -244,8 +239,9 @@ $font_text: 'Open Sans', sans-serif;
       font-size: 24px;
       line-height: 33px;
       text-align: left;
+      margin-bottom: 29px;
       span {
-      display: block;
+        display: block;
       }
     }
 
@@ -269,7 +265,7 @@ $font_text: 'Open Sans', sans-serif;
     .slick-dots {
       width: 50%;
       position: absolute;
-      bottom: 49px;
+      bottom: 60px;
       margin: 0;
       list-style: none;
       text-align: center;
@@ -316,10 +312,10 @@ $font_text: 'Open Sans', sans-serif;
 
   @media (max-width: 368px) {
     .slick-dots {
-      bottom: 73px;
+      bottom: 61px;
     }
   }
 
-
 }
+
 //////////////////////////VIDEO END////////////////////////

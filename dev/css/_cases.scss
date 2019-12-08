@@ -77,7 +77,7 @@ $font_text: 'Open Sans', sans-serif;
     display: flex;
   }
 
-  .before, .after{
+  .before, .after {
     font-family: $font_text;
     font-style: normal;
     font-weight: 600;
@@ -288,47 +288,7 @@ $font_text: 'Open Sans', sans-serif;
 
   @media (max-width: 768px) {
     padding-top: 53px;
-    padding-bottom: 72px;
-
-    .shot-line-left-top {
-      width: 2px;
-      height: 32px;
-      left: 25%;
-      background: #0059CB;
-      position: absolute;
-      top: -2%;
-      z-index: 2;
-    }
-
-    .shot-line-right-top {
-      width: 2px;
-      height: 32px;
-      right: 25%;
-      background: #0059CB;
-      position: absolute;
-      top: -2%;
-      z-index: 2;
-    }
-
-    .shot-line-left-bottom {
-      width: 2px;
-      height: 32px;
-      left: 25%;
-      background: #0059CB;
-      position: absolute;
-      bottom: -8%;
-      z-index: 2;
-    }
-
-    .shot-line-right-bottom {
-      width: 2px;
-      height: 32px;
-      right: 25%;
-      background: #0059CB;
-      position: absolute;
-      bottom: -8%;
-      z-index: 2;
-    }
+    padding-bottom: 112px;
 
     .block {
       display: none;
@@ -471,11 +431,47 @@ $font_text: 'Open Sans', sans-serif;
     }
   }
 
-  //@media (max-width: 748px) {
-  //  .slick-dots {
-  //    bottom: 122px;
-  //  }
-  //}
+  @media (max-width: 576px) {
+    .shot-line-left-top {
+      width: 2px;
+      height: 32px;
+      left: 25%;
+      background: #0059CB;
+      position: absolute;
+      top: -2%;
+      z-index: 2;
+    }
+
+    .shot-line-right-top {
+      width: 2px;
+      height: 32px;
+      right: 25%;
+      background: #0059CB;
+      position: absolute;
+      top: -2%;
+      z-index: 2;
+    }
+
+    .shot-line-left-bottom {
+      width: 2px;
+      height: 32px;
+      left: 25%;
+      background: #0059CB;
+      position: absolute;
+      bottom: -14%;
+      z-index: 2;
+    }
+
+    .shot-line-right-bottom {
+      width: 2px;
+      height: 32px;
+      right: 25%;
+      background: #0059CB;
+      position: absolute;
+      bottom: -14%;
+      z-index: 2;
+    }
+  }
   //
   //@media (max-width: 728px) {
   //  .slick-dots {
@@ -619,6 +615,6 @@ $font_text: 'Open Sans', sans-serif;
   //    }
   //  }
 
-
 }
+
 //////////////////////////CASES END////////////////////////
