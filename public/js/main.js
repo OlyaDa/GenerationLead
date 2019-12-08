@@ -14,6 +14,8 @@ $(function(){
     });
 });
 
+//slider for "look video review about our projects"
+
 $('.slider').slick({
     slidesToShow: 2,
     slidesToScroll: 1,
@@ -22,7 +24,21 @@ $('.slider').slick({
     autoplay: false,
     autoplaySpeed: 1500,
     infinite: true,
+    responsive: [
+        {
+            breakpoint: 577,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                infinite: true,
+                dots: true,
+                arrows: false,
+            }
+        },
+    ]
 });
+
+//slider for "our cases"
 
 $('.cases-slider').slick({
     slidesToShow: 1,
@@ -32,6 +48,18 @@ $('.cases-slider').slick({
     autoplay: false,
     autoplaySpeed: 1500,
     infinite: true,
+    responsive: [
+        {
+            breakpoint: 769,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                infinite: true,
+                dots: true,
+                arrows: false,
+            }
+        },
+    ]
 });
 
 $('.team-slider').slick({
@@ -77,4 +105,24 @@ $(document).ready(function() {
 
         fixedContentPos: false
     });
+});
+
+
+const accardionToggle = (slideMenu) => (e) => {
+    slideMenu.forEach((links) => {
+        const hidePanel = links.nextElementSibling;
+        if (links === e.currentTarget) {
+            e.currentTarget.classList.toggle('active');
+            hidePanel.classList.toggle('active-block');
+        } else {
+            links.classList.remove('active');
+            hidePanel.classList.remove('active-block');
+        }
+    });
+};
+
+const slideMenu = document.querySelectorAll('.accardion-link');
+
+slideMenu.forEach((links) => {
+    links.addEventListener('click', accardionToggle(slideMenu))
 });

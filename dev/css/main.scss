@@ -45,14 +45,35 @@ body {
   position: relative;
 }
 
-@media (max-width: 1250px) {
-  .container {
-    max-width: 980px;
-    padding: 0 15px;
+.container-big {
+  max-width: 1200px;
+  //padding: 0 15px !important;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+
+
+@media (max-width: 1240px) {
+  .container-big {
+    max-width: 1200px;
+    padding: 0 15px !important;
     margin-left: auto;
     margin-right: auto;
+    position: relative;
   }
 }
+//
+//@media (max-width: 1230px) {
+//  .container {
+//    max-width: 1200px;
+//    padding: 0 0 !important;
+//    margin-left: auto;
+//    margin-right: auto;
+//    position: relative;
+//  }
+//}
 
 img {
   width: 100%;

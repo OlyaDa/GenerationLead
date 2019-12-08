@@ -7,16 +7,17 @@ $font_text: 'Open Sans', sans-serif;
   background-size: cover;
   padding: 60px 0 53px 0;
   overflow: hidden;
+  position: relative;
 
   .bottom-t {
     display: block;
     background-color: black;
     opacity: 0.1;
     height: 20px;
-    width: 33px;
+    width: 37px;
     position: absolute;
-    right: 3.2%;
-    top: -13%;
+    right: 11%;
+    top: 0%;
   }
 
   .caption {

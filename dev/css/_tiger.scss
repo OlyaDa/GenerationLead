@@ -12,6 +12,10 @@ $font_text: 'Open Sans', sans-serif;
     position: relative;
   }
 
+  .img-small {
+    display: none;
+  }
+
   .shot-line-left {
     width: 2px;
     height: 48px;
@@ -61,12 +65,131 @@ $font_text: 'Open Sans', sans-serif;
   }
 
   .line {
-    background-color: #E4E4E4;
-  }
+       background-color: #E4E4E4;
+    //background-color: black;
+     }
 
   .letter {
     z-index: -2;
   }
+
+  /////media
+
+  @media (max-width: 690px) {
+    .letter {
+      display: none;
+    }
+  }
+
+  @media (max-width: 576px) {
+
+    .shot-line-left {
+      width: 2px;
+      height: 32px;
+      left: 25%;
+      background: #0059CB;
+      position: absolute;
+      top: -17%;
+      z-index: 2;
+    }
+
+    .shot-line-right {
+      width: 2px;
+      height: 32px;
+      right: 25%;
+      background: #0059CB;
+      position: absolute;
+      top: -17%;
+      z-index: 2;
+    }
+
+    padding-top: 84px;
+    .image{
+      position: absolute;
+      left: -6%;
+      right: -6%;
+    }
+    .img-big {
+      display: none;
+    }
+
+    .img-small {
+      display: block;
+    }
+
+    .holder {
+      height: 549px;
+    }
+  }
+
+  @media (max-width: 536px) {
+    .holder {
+      height: 528px;
+    }
+  }
+
+  @media (max-width: 516px) {
+    .holder {
+      height: 507px;
+    }
+  }
+
+  @media (max-width: 496px) {
+    .holder {
+      height: 486px;
+    }
+  }
+
+  @media (max-width: 476px) {
+    .holder {
+      height: 465px;
+    }
+  }
+
+  @media (max-width: 456px) {
+    .holder {
+      height: 444px;
+    }
+  }
+
+  @media (max-width: 436px) {
+    .holder {
+      height: 423px;
+    }
+  }
+  @media (max-width: 416px) {
+    .holder {
+      height: 402px;
+    }
+  }
+  @media (max-width: 396px) {
+    .holder {
+      height: 381px;
+    }
+  }
+  @media (max-width: 376px) {
+    .holder {
+      height: 360px;
+    }
+  }
+  @media (max-width: 356px) {
+    .holder {
+      height: 339px;
+    }
+  }
+
+  @media (max-width: 336px) {
+    .holder {
+      height: 318px;
+    }
+  }
+
+  @media (max-width: 320px) {
+    .holder {
+      height: 297px;
+    }
+  }
+
 
 
 }
