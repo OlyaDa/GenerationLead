@@ -1864,7 +1864,7 @@
     top: 200%; }
   .portfolio .block-right {
     right: 0;
-    bottom: -473px; }
+    bottom: -1200%; }
   .portfolio .caption {
     font-family: "Open Sans", sans-serif;
     font-style: normal;
@@ -1942,6 +1942,18 @@
       top: 59%; }
     .portfolio .slick-next {
       top: 41%; } }
+  @media (max-width: 890px) {
+    .portfolio .block-right {
+      right: 0;
+      bottom: -1100%; } }
+  @media (max-width: 790px) {
+    .portfolio .block-right {
+      right: 0;
+      bottom: -1000%; } }
+  @media (max-width: 690px) {
+    .portfolio .block-right {
+      right: 0;
+      bottom: -940%; } }
   @media (max-width: 768px) {
     .portfolio .slick-prev {
       top: 62%; }

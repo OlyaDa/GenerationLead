@@ -41,7 +41,8 @@ $font_text: 'Open Sans', sans-serif;
 
   .block-right {
     right: 0;
-    bottom: -473px;
+    bottom: -1200%;
+    //bottom: -473px;
   }
 
   .caption {
@@ -158,6 +159,29 @@ $font_text: 'Open Sans', sans-serif;
     }
     .slick-next {
       top: 41%
+    }
+  }
+
+  @media (max-width: 890px) {
+    .block-right {
+      right: 0;
+      bottom: -1100%;
+      //bottom: -473px;
+    }
+  }
+
+  @media (max-width: 790px) {
+    .block-right {
+      right: 0;
+      bottom: -1000%;
+      //bottom: -473px;
+    }
+  }
+  @media (max-width: 690px) {
+    .block-right {
+      right: 0;
+      bottom: -940%;
+      //bottom: -473px;
     }
   }
 
