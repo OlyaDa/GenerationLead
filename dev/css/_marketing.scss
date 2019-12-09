@@ -109,6 +109,10 @@ $font_text: 'Open Sans', sans-serif;
     }
   }
 
+  .btn {
+    z-index: 99;
+  }
+
   /////media
 
   @media (max-width: 1160px) {

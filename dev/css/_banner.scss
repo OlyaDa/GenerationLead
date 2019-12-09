@@ -2,13 +2,9 @@
 $font_text: 'Open Sans', sans-serif;
 
 .banner {
-  height: 100vh;
-  //background: url("../../public/images/block1.png") center center no-repeat;
-  //background-size: cover;
-  //padding: 3% 0 0 10%;
+  min-height: 100vh;
   position: relative;
   display: flex;
-  //align-items: center;
   overflow: hidden;
 
   .banner-title {
@@ -66,6 +62,7 @@ $font_text: 'Open Sans', sans-serif;
     max-width: 100%;
     border: 2px solid #0059CB;
     border-radius: 0;
+    z-index: 99;
 
     &:before {
       z-index: -1;
@@ -182,9 +179,23 @@ $font_text: 'Open Sans', sans-serif;
 
   /////media
 
+  @media (max-width: 1300px) {
+    .image-tiger {
+      width: 672px;
+      padding-left: 23px;
+    }
+  }
+
   @media (max-width: 1288px) {
     .a {
       bottom: -18%;
+    }
+  }
+
+  @media (max-width: 1300px) {
+    .image-tiger {
+      width: 640px;
+      padding-left: 0;
     }
   }
 
@@ -192,11 +203,6 @@ $font_text: 'Open Sans', sans-serif;
     .banner-inner {
       flex-wrap: nowrap;
     }
-    //.image-tiger {
-    //  max-width: 560px;
-    //  margin-top: 80px;
-    //  padding-left: 0;
-    //}
 
     .banner-title {
       font-size: 84px;
@@ -209,15 +215,27 @@ $font_text: 'Open Sans', sans-serif;
   @media (max-width: 1164px) {
     .image-tiger {
       max-width: 649px;
-      //margin-top: 80px;
       padding-left: 0;
+    }
+  }
+
+  @media (max-width: 1120px) {
+    .image-tiger {
+      max-width: 569px;
+      padding-left: 0;
+      margin-top: 0;
+    }
+    .banner-body {
+      margin-top: 74px;
     }
   }
 
   @media (max-width: 1090px) {
     .image-tiger {
-      max-width: 577px;
-      margin-top: 60px;
+      max-width: 542px;
+    }
+    .banner-body {
+      margin-top: 68px;
     }
   }
 
@@ -229,8 +247,12 @@ $font_text: 'Open Sans', sans-serif;
 
   @media (max-width: 1019px) {
     .image-tiger {
-      max-width: 526px;
-      margin-top: 82px;
+      max-width: 466px;
+      //margin-top: 82px;
+    }
+
+    .banner-body {
+      margin-top: 42px;
     }
   }
 
@@ -245,15 +267,22 @@ $font_text: 'Open Sans', sans-serif;
 
   @media (max-width: 970px) {
     .image-tiger {
-      max-width: 440px;
-      margin-top: 106px;
+      max-width: 416px;
+      //margin-top: 106px;
     }
-  }
+    .banner-body {
+      margin-top: 18px;
+    }
+
+    .banner-title {
+      line-height: 71px;
+    }
+    }
+
 
   @media (max-width: 882px) {
     .image-tiger {
       max-width: 399px;
-      margin-top: 106px;
     }
 
      .banner-title {
@@ -262,24 +291,41 @@ $font_text: 'Open Sans', sans-serif;
         font-size: 48px;
       }
     }
+
+    .banner-title {
+      line-height: 58px;
+    }
+    .button {
+      margin-left: 9px;
+      margin-top: 30px;
+      margin-bottom: 25px;
+    }
   }
 
   @media (max-width: 852px) {
-
-     .banner-title {
+    .banner-title {
       font-size: 65px;
       span {
         font-size: 46px;
       }
     }
+    .image-tiger {
+      max-width: 366px;
+    }
+  }
+
+  @media (max-width: 770px) {
+
+    .image-tiger {
+      max-width: 327px;
+    }
+
+    .banner-body {
+      margin-top: 0;
+    }
   }
 
   @media (max-width: 750px) {
-
-    .image-tiger {
-      max-width: 367px;
-      margin-top: 106px;
-    }
 
     .banner-title {
       font-size: 55px;
@@ -289,7 +335,15 @@ $font_text: 'Open Sans', sans-serif;
     }
   }
 
+  @media (max-width: 687px) {
+
+    .btn {
+      padding: 15px 45px;
+    }
+  }
+
   @media (max-width: 667px) {
+    text-align: center;
     .banner-inner {
       flex-wrap: wrap;
     }
@@ -300,10 +354,17 @@ $font_text: 'Open Sans', sans-serif;
 
     .image-tiger {
       margin-top: 0;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     .banner-title {
       line-height: 50px;
+      max-width: 100%;
+    }
+
+    .banner-text {
+      max-width: 100%;
     }
   }
 
@@ -328,148 +389,6 @@ $font_text: 'Open Sans', sans-serif;
     }
   }
 
-  //@media (max-height: 768px) {
-  //  .banner-inner {
-  //    margin-top: 0;
-  //    align-items: center;
-  //  }
-  //
-  //  .banner-body {
-  //    margin-top: 0;
-  //  }
-  //}
-
-  //@media (max-height: 768px) {
-  //    .banner-inner {
-  //      margin-top: 0;
-  //      align-items: center;
-  //    }
-  //
-  //    .banner-body {
-  //      margin-top: 0;
-  //    }
-  //
-  //   .a {
-  //    bottom: 11%;
-  //    left: 6%;
-  //  }
-  //
-  //  .image-tiger {
-  //    width: 273px;
-  //    margin-top: 0;
-  //  }
-  //}
-
-
-
-  //@media (max-height: 576px) {
-  //  height: 100%;
-  //  .banner-inner {
-  //    margin-top: 0;
-  //    align-items: center;
-  //  }
-  //
-  //  .banner-body {
-  //    margin-top: 0;
-  //  }
-  //
-  //  .a {
-  //    bottom: 11%;
-  //    left: 6%;
-  //  }
-  //}
-
-
-
-  //@media (max-height: 950px) {
-  //  display: flex;
-  //  overflow: hidden;
-  //  justify-content: center;
-  //  align-items: center;
-  //
-  //  .banner-inner {
-  //    margin-top: 0;
-  //  }
-  //
-  //  .banner-body {
-  //    margin-top: 0;
-  //  }
-  //
-  //  .image-tiger {
-  //    width: 500px;
-  //    height: 430px;
-  //  }
-  //}
-  //
-  //@media (max-height: 835px) {
-  //
-  //  .banner-inner {
-  //    padding-top: 100px;
-  //  }
-  //
-  //}
-  //
-  //@media (max-height: 1024px) {
-  //  .shot-line-left, .shot-line-right {
-  //    bottom: -12%;
-  //  }
-  //}
-  //
-  //@media (max-height: 970px) {
-  //  .r {
-  //    top: -12%;
-  //  }
-  //}
-  //
-  //@media (max-height: 935px) {
-  //  .shot-line-left, .shot-line-right {
-  //    bottom: -5%;
-  //  }
-  //  .a {
-  //    bottom: -5%;
-  //  }
-  //  .r {
-  //    top: -8%;
-  //  }
-  //}
-  //
-  //@media (max-height: 870px) {
-  //  .a {
-  //    bottom: 0;
-  //  }
-  //  .r {
-  //    top: -3%;
-  //  }
-  //}
-  //
-  //@media (max-height: 835px) {
-  //
-  //  .image-tiger {
-  //    height: 590px;
-  //  }
-  //
-  //  .image {
-  //    bottom: 120px;
-  //  }
-  //
-  //  .shot-line-left, .shot-line-right {
-  //    bottom: 5%;
-  //  }
-  //}
-  //
-  //@media (max-height: 790px) {
-  //}
-  //
-  //@media (max-height: 710px) {
-  //  .image {
-  //    bottom: 65px;
-  //  }
-  //
-  //  .image-tiger {
-  //    height: 560px;
-  //  }
-  //}
-
 
 
 }
@@ -479,6 +398,7 @@ $font_text: 'Open Sans', sans-serif;
   ////////media
 
   @media (max-width: 400px) {
+    text-align: left;
 
     .letter {
       display: none;
@@ -534,7 +454,6 @@ $font_text: 'Open Sans', sans-serif;
     .image-tiger {
       width: 100%;
       padding-left: 0;
-      margin-top: 30px;
     }
 
     .image {
