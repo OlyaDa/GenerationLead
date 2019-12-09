@@ -92,8 +92,6 @@ $font_text: 'Open Sans', sans-serif;
     }
   }
 
-
-
   .banner-inner {
     display: flex;
     margin-top: 116px;
@@ -179,7 +177,6 @@ $font_text: 'Open Sans', sans-serif;
 
   /////media
 
-
   @media (max-width: 1300px) {
     .image-tiger {
       width: 677px;
@@ -192,7 +189,7 @@ $font_text: 'Open Sans', sans-serif;
       bottom: -18%;
     }
   }
-  
+
   @media (max-width: 1195px) {
     .banner-inner {
       flex-wrap: nowrap;
@@ -271,15 +268,14 @@ $font_text: 'Open Sans', sans-serif;
     .banner-title {
       line-height: 71px;
     }
-    }
-
+  }
 
   @media (max-width: 882px) {
     .image-tiger {
       max-width: 399px;
     }
 
-     .banner-title {
+    .banner-title {
       font-size: 72px;
       span {
         font-size: 48px;
@@ -383,9 +379,8 @@ $font_text: 'Open Sans', sans-serif;
     }
   }
 
-
-
 }
+
 //////////////////////////BANNER END////////////////////////
 
 .banner {
