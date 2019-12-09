@@ -179,10 +179,11 @@ $font_text: 'Open Sans', sans-serif;
 
   /////media
 
+
   @media (max-width: 1300px) {
     .image-tiger {
-      width: 672px;
-      padding-left: 23px;
+      width: 677px;
+      padding-left: 0;
     }
   }
 
@@ -191,14 +192,7 @@ $font_text: 'Open Sans', sans-serif;
       bottom: -18%;
     }
   }
-
-  @media (max-width: 1300px) {
-    .image-tiger {
-      width: 640px;
-      padding-left: 0;
-    }
-  }
-
+  
   @media (max-width: 1195px) {
     .banner-inner {
       flex-wrap: nowrap;
