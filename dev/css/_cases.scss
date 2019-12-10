@@ -219,6 +219,15 @@ $font_text: 'Open Sans', sans-serif;
     display: none;
   }
 
+  .slick-prev:before {
+    margin-left: -3px !important;
+  }
+
+  .slick-next:before {
+    margin-left: 3px !important;
+  }
+
+
   /////media
 
   @media (max-width: 1240px) {

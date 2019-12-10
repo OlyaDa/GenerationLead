@@ -188,12 +188,19 @@ $font_text: 'Open Sans', sans-serif;
   }
 
   ///media
+
+  @media (max-width: 1430px) {
+ .bottom-t {
+   display: none;
+ }
+  }
+
   @media (max-width: 991px) {
     input, textarea {
       width: 100%;
     }
     .btn {
-      padding: 0;
+      padding: 15px 30px;
     }
   }
 

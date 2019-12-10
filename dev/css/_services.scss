@@ -229,6 +229,7 @@ $font_text: 'Open Sans', sans-serif;
         left: -10px;
         bottom: -10px;
         right: 4px;
+        background-color: #FFFFFF;
       }
 
       &:after {
@@ -413,57 +414,57 @@ $font_text: 'Open Sans', sans-serif;
     }
   }
 
+  //@media (max-width: 767px) {
+  //  .tabs .holder {
+  //    left: -16.3%;
+  //    margin-bottom: 24px;
+  //  }
+  //  .tabs .btn {
+  //    padding: 14px 90px;
+  //    max-width: 49.7%;
+  //  }
+  //
+  //  .tabs .button {
+  //    margin-bottom: 10px;
+  //  }
+  //}
+  //
+  //@media (max-width: 730px) {
+  //  .tabs .holder {
+  //    left: -17.1%;
+  //  }
+  //}
+  //
+  //@media (max-width: 700px) {
+  //  .tabs .holder {
+  //    left: -17.6%;
+  //  }
+  //}
+  //
+  //@media (max-width: 680px) {
+  //  .tabs .holder {
+  //    left: -18.4%;
+  //  }
+  //}
+  //
+  //@media (max-width: 640px) {
+  //  .tabs .holder {
+  //    left: -19.4%;
+  //  }
+  //}
+  //@media (max-width: 598px) {
+  //  .tabs .holder {
+  //    left: -20.7%;
+  //  }
+  //}
+  //
+  //@media (max-width: 577px) {
+  //  .tabs .holder {
+  //    left: -21.6%;
+  //  }
+  //}
+
   @media (max-width: 767px) {
-    .tabs .holder {
-      left: -16.3%;
-      margin-bottom: 24px;
-    }
-    .tabs .btn {
-      padding: 14px 90px;
-      max-width: 49.7%;
-    }
-
-    .tabs .button {
-      margin-bottom: 10px;
-    }
-  }
-
-  @media (max-width: 730px) {
-    .tabs .holder {
-      left: -17.1%;
-    }
-  }
-
-  @media (max-width: 700px) {
-    .tabs .holder {
-      left: -17.6%;
-    }
-  }
-
-  @media (max-width: 680px) {
-    .tabs .holder {
-      left: -18.4%;
-    }
-  }
-
-  @media (max-width: 640px) {
-    .tabs .holder {
-      left: -19.4%;
-    }
-  }
-  @media (max-width: 598px) {
-    .tabs .holder {
-      left: -20.7%;
-    }
-  }
-
-  @media (max-width: 577px) {
-    .tabs .holder {
-      left: -21.6%;
-    }
-  }
-
-  @media (max-width: 576px) {
     .tabs {
       display: none;
     }
@@ -476,13 +477,24 @@ $font_text: 'Open Sans', sans-serif;
       background-size: cover;
     }
 
-    .inner .accardion-lists .btn {
+    .inner .accordion-lists .btn {
       width: 49.3%;
+    }
+
+    .line4, .line5 {
+      z-index: 1;
+      background-color: rgba(228, 228, 228, 0.2);
+    }
+  }
+
+  @media (max-width: 600px) {
+    .inner .accordion-lists .btn {
+      width: 65%;
     }
   }
 
   @media (max-width: 411px) {
-    .inner .accardion-lists .btn {
+    .inner .accordion-lists .btn {
       width: 100%;
     }
   }

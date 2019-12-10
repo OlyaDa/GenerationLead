@@ -62,7 +62,7 @@ $font_text: 'Open Sans', sans-serif;
     max-width: 100%;
     border: 2px solid #0059CB;
     border-radius: 0;
-    z-index: 99;
+    //z-index: 99;
 
     &:before {
       z-index: -1;
@@ -73,6 +73,7 @@ $font_text: 'Open Sans', sans-serif;
       left: -10px;
       bottom: -10px;
       right: 4px;
+      background-color: #FFFFFF;
     }
 
     &:after {
@@ -85,17 +86,26 @@ $font_text: 'Open Sans', sans-serif;
       height: 100%;
       background: #fff;
     }
+
     &:hover {
       background: #0059CB;
       color: #FFFFFF;
       transition: .3s;
     }
+    //&:hover {
+    //  &:after {
+    //    background: #0059CB;
+    //    transition: .3s;
+    //  }
+    //  color: #FFFFFF;
+    //  transition: .3s;
+    //}
   }
 
   .banner-inner {
     display: flex;
     margin-top: 116px;
-    //justify-content: space-between;
+    justify-content: space-between;
     //align-items: center;
   }
 
@@ -175,11 +185,215 @@ $font_text: 'Open Sans', sans-serif;
     //background-color: black;
   }
 
+  ///////media
+  //
+  //@media (max-width: 1300px) {
+  //  .image-tiger {
+  //    width: 677px;
+  //    padding-left: 0;
+  //  }
+  //}
+  //
+  //@media (max-width: 1288px) {
+  //  .a {
+  //    bottom: -18%;
+  //  }
+  //}
+  //
+  //@media (max-width: 1195px) {
+  //  .banner-inner {
+  //    flex-wrap: nowrap;
+  //  }
+  //
+  //  .banner-title {
+  //    font-size: 84px;
+  //    span {
+  //      font-size: 59px;
+  //    }
+  //  }
+  //}
+  //
+  //@media (max-width: 1164px) {
+  //  .image-tiger {
+  //    max-width: 649px;
+  //    padding-left: 0;
+  //  }
+  //}
+  //
+  //@media (max-width: 1120px) {
+  //  .image-tiger {
+  //    max-width: 569px;
+  //    padding-left: 0;
+  //    margin-top: 0;
+  //  }
+  //  .banner-body {
+  //    margin-top: 74px;
+  //  }
+  //}
+  //
+  //@media (max-width: 1090px) {
+  //  .image-tiger {
+  //    max-width: 542px;
+  //  }
+  //  .banner-body {
+  //    margin-top: 68px;
+  //  }
+  //}
+  //
+  //@media (max-width: 1024px) {
+  //  .shot-line-left, .shot-line-right {
+  //    bottom: 5%;
+  //  }
+  //}
+  //
+  //@media (max-width: 1019px) {
+  //  .image-tiger {
+  //    max-width: 466px;
+  //    //margin-top: 82px;
+  //  }
+  //
+  //  .banner-body {
+  //    margin-top: 42px;
+  //  }
+  //}
+  //
+  //@media (max-width: 992px) {
+  //  .letter {
+  //    display: none;
+  //  }
+  //  .image {
+  //    display: none;
+  //  }
+  //}
+  //
+  //@media (max-width: 970px) {
+  //  .image-tiger {
+  //    max-width: 416px;
+  //    //margin-top: 106px;
+  //  }
+  //  .banner-body {
+  //    margin-top: 18px;
+  //  }
+  //
+  //  .banner-title {
+  //    line-height: 71px;
+  //  }
+  //}
+  //
+  //@media (max-width: 882px) {
+  //  .image-tiger {
+  //    max-width: 399px;
+  //  }
+  //
+  //  .banner-title {
+  //    font-size: 72px;
+  //    span {
+  //      font-size: 48px;
+  //    }
+  //  }
+  //
+  //  .banner-title {
+  //    line-height: 58px;
+  //  }
+  //  .button {
+  //    margin-left: 9px;
+  //    margin-top: 30px;
+  //    margin-bottom: 25px;
+  //  }
+  //}
+  //
+  //@media (max-width: 852px) {
+  //  .banner-title {
+  //    font-size: 65px;
+  //    span {
+  //      font-size: 46px;
+  //    }
+  //  }
+  //  .image-tiger {
+  //    max-width: 366px;
+  //  }
+  //}
+  //
+  //@media (max-width: 770px) {
+  //
+  //  .image-tiger {
+  //    max-width: 327px;
+  //  }
+  //
+  //  .banner-body {
+  //    margin-top: 0;
+  //  }
+  //}
+  //
+  //@media (max-width: 750px) {
+  //
+  //  .banner-title {
+  //    font-size: 55px;
+  //    span {
+  //      font-size: 36px;
+  //    }
+  //  }
+  //}
+  //
+  //@media (max-width: 687px) {
+  //
+  //  .btn {
+  //    padding: 15px 45px;
+  //  }
+  //}
+  //
+  //@media (max-width: 667px) {
+  //  text-align: center;
+  //  .banner-inner {
+  //    flex-wrap: wrap;
+  //  }
+  //
+  //  .banner-body {
+  //    margin-top: 0;
+  //  }
+  //
+  //  .image-tiger {
+  //    margin-top: 0;
+  //    margin-left: auto;
+  //    margin-right: auto;
+  //  }
+  //
+  //  .banner-title {
+  //    line-height: 50px;
+  //    max-width: 100%;
+  //  }
+  //
+  //  .banner-text {
+  //    max-width: 100%;
+  //  }
+  //}
+  //
+  //@media (max-width: 576px) {
+  //
+  //  .shot-line-left {
+  //    width: 2px;
+  //    height: 32px;
+  //    left: 25%;
+  //    background: #0059CB;
+  //    position: absolute;
+  //    bottom: -13%;
+  //  }
+  //
+  //  .shot-line-right {
+  //    width: 2px;
+  //    height: 32px;
+  //    right: 25%;
+  //    background: #0059CB;
+  //    position: absolute;
+  //    bottom: -13%;
+  //  }
+  //}
+
   /////media
 
   @media (max-width: 1300px) {
     .image-tiger {
-      width: 677px;
+      width: 708px;
       padding-left: 0;
     }
   }
@@ -187,6 +401,13 @@ $font_text: 'Open Sans', sans-serif;
   @media (max-width: 1288px) {
     .a {
       bottom: -18%;
+    }
+  }
+
+  @media (max-width: 1199px) {
+    .image-tiger {
+      width: 675px;
+      padding-left: 0;
     }
   }
 
@@ -212,7 +433,7 @@ $font_text: 'Open Sans', sans-serif;
 
   @media (max-width: 1120px) {
     .image-tiger {
-      max-width: 569px;
+      max-width: 600px;
       padding-left: 0;
       margin-top: 0;
     }
@@ -223,7 +444,7 @@ $font_text: 'Open Sans', sans-serif;
 
   @media (max-width: 1090px) {
     .image-tiger {
-      max-width: 542px;
+      max-width: 570px;
     }
     .banner-body {
       margin-top: 68px;
@@ -238,7 +459,7 @@ $font_text: 'Open Sans', sans-serif;
 
   @media (max-width: 1019px) {
     .image-tiger {
-      max-width: 466px;
+      max-width: 500px;
       //margin-top: 82px;
     }
 
@@ -258,7 +479,7 @@ $font_text: 'Open Sans', sans-serif;
 
   @media (max-width: 970px) {
     .image-tiger {
-      max-width: 416px;
+      max-width: 450px;
       //margin-top: 106px;
     }
     .banner-body {
@@ -267,6 +488,12 @@ $font_text: 'Open Sans', sans-serif;
 
     .banner-title {
       line-height: 71px;
+    }
+  }
+
+  @media (max-width: 893px) {
+    .image-tiger {
+      max-width: 430px;
     }
   }
 
@@ -411,7 +638,6 @@ $font_text: 'Open Sans', sans-serif;
     }
 
     .banner-inner {
-      margin-top: 0;
       flex-direction: column;
       margin-top: 7px;
     }
@@ -442,6 +668,7 @@ $font_text: 'Open Sans', sans-serif;
 
     .image-tiger {
       width: 100%;
+      max-width: 370px;
       padding-left: 0;
     }
 
@@ -451,3 +678,4 @@ $font_text: 'Open Sans', sans-serif;
   }
 
 }
+

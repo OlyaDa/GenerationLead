@@ -97,7 +97,7 @@ $('.team-slider').slick({
 
 $('.portfolio-slider').slick({
     slidesToShow: 2,
-    slidesToScroll: 2,
+    slidesToScroll: 1,
     prevArrow:'<button class="slick-arrow slick-prev"> <i class="fas fa-chevron-left"></i> </button>',
     nextArrow:'<button class="slick-arrow slick-next"> <i class="fas fa-chevron-right"></i> </button>',
     autoplay: false,
