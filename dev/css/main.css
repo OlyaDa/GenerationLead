@@ -677,14 +677,13 @@
         margin: 0;
         width: 100%; }
       .video .slick-dots {
-        width: 50%;
+        width: calc(50% - 15px);
         position: absolute;
         bottom: 60px;
         margin: 0;
         list-style: none;
         text-align: center;
-        left: 25%;
-        right: 25%;
+        left: calc(25% + 7.5px);
         background-color: #F0F0F0;
         display: flex;
         justify-content: center;
@@ -1159,18 +1158,18 @@
       color: #FAFAFA;
       text-transform: uppercase;
       margin-bottom: 25px; }
-    .services .inner .accardion-block {
+    .services .inner .accordion-block {
       background-color: transparent;
       border-radius: 0;
       display: block;
       margin-bottom: 26px; }
-    .services .inner .accardion-block:last-child {
+    .services .inner .accordion-block:last-child {
       margin-bottom: 0; }
-    .services .inner .accardion-link {
+    .services .inner .accordion-link {
       background-color: transparent;
       border-radius: 0;
       position: relative; }
-    .services .inner .accardion-link a {
+    .services .inner .accordion-link .link {
       display: flex;
       align-items: center;
       text-decoration: none;
@@ -1180,13 +1179,13 @@
       font-size: 16px;
       line-height: 22px;
       color: #FAFAFA; }
-      .services .inner .accardion-link a .square {
+      .services .inner .accordion-link .link .square {
         height: 8px;
         width: 8px;
         background: #fff;
         display: inline-block;
         margin-right: 8px; }
-    .services .inner .accardion-link a:after {
+    .services .inner .accordion-link .link:after {
       content: "";
       border: solid #fff;
       border-width: 0 2px 2px 0;
@@ -1199,17 +1198,17 @@
     .services .inner .active {
       background-color: transparent;
       border-radius: 0; }
-    .services .inner .accardion-lists {
+    .services .inner .accordion-lists {
       background-color: transparent;
       border-radius: 0;
       max-height: 0;
       overflow: hidden;
       opacity: 0; }
-      .services .inner .accardion-lists .button {
+      .services .inner .accordion-lists .button {
         margin-left: 7px;
         margin-top: 28px;
         margin-bottom: 10px; }
-      .services .inner .accardion-lists .btn {
+      .services .inner .accordion-lists .btn {
         font-family: "Open Sans", sans-serif;
         font-style: normal;
         font-weight: 600;
@@ -1224,7 +1223,7 @@
         border: 2px solid #fff !important;
         border-radius: 0;
         z-index: 9; }
-        .services .inner .accardion-lists .btn:before {
+        .services .inner .accordion-lists .btn:before {
           z-index: -2;
           border: 2px solid #fff !important;
           position: absolute;
@@ -1233,7 +1232,7 @@
           left: -10px;
           bottom: -10px;
           right: 4px; }
-        .services .inner .accardion-lists .btn:after {
+        .services .inner .accordion-lists .btn:after {
           z-index: -2;
           position: absolute;
           content: '';
@@ -1242,13 +1241,13 @@
           width: 100%;
           height: 100%;
           background: #fff; }
-        .services .inner .accardion-lists .btn:hover {
+        .services .inner .accordion-lists .btn:hover {
           color: #FFFFFF;
           transition: .3s; }
-          .services .inner .accardion-lists .btn:hover:after {
+          .services .inner .accordion-lists .btn:hover:after {
             background: #0059CB;
             transition: .3s; }
-      .services .inner .accardion-lists .text {
+      .services .inner .accordion-lists .text {
         font-family: "Open Sans", sans-serif;
         font-style: normal;
         font-weight: normal;
@@ -1256,7 +1255,7 @@
         line-height: 26px;
         color: #FAFAFA;
         margin-top: 15px; }
-    .services .inner .accardion-link.active a::after {
+    .services .inner .accordion-link.active .link::after {
       content: "";
       border: solid #fff;
       border-width: 0 2px 2px 0;
@@ -1265,7 +1264,7 @@
       transform: rotate(-135deg);
       position: absolute;
       top: 5px; }
-    .services .inner .accardion-link.active a {
+    .services .inner .accordion-link.active .link {
       color: #fff; }
     .services .inner .active-block {
       max-height: 500px;
@@ -1671,14 +1670,13 @@
         margin: 0;
         width: 100%; }
       .team .slick-dots {
-        width: 50%;
+        width: calc(50% - 15px);
         position: absolute;
-        bottom: 81px;
+        bottom: 83px;
         margin: 0;
         list-style: none;
         text-align: center;
-        left: 25%;
-        right: 25%;
+        left: calc(25% + 7.5px);
         background-color: #F0F0F0;
         display: flex;
         justify-content: center;
@@ -1709,12 +1707,9 @@
         display: none; }
       .team .slick-dotted.slick-slider {
         position: relative; } }
-  @media (max-width: 404px) {
-    .team .slick-dots {
-      bottom: 80px; } }
   @media (max-width: 374px) {
     .team .slick-dots {
-      bottom: 102px; } }
+      bottom: 105px; } }
 
 .portfolio {
   padding-bottom: 0;
@@ -1886,14 +1881,13 @@
         margin: 0;
         width: 100%; }
       .portfolio .slick-dots {
-        width: 50%;
+        width: calc(50% - 15px);
         position: absolute;
         bottom: -33px;
         margin: 0;
         list-style: none;
         text-align: center;
-        left: 25%;
-        right: 25%;
+        left: calc(25% + 7.5px);
         background-color: #F0F0F0;
         display: flex;
         justify-content: center;

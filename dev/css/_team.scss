@@ -276,14 +276,14 @@ $font_text: 'Open Sans', sans-serif;
     }
 
     .slick-dots {
-      width: 50%;
+      width: calc(50% - 15px);
       position: absolute;
-      bottom: 81px;
+      bottom: 83px;
       margin: 0;
       list-style: none;
       text-align: center;
-      left: 25%;
-      right: 25%;
+      left: calc(25% + 7.5px);
+      //right: 25%;
       background-color: #F0F0F0;
       display: flex;
       justify-content: center;
@@ -327,15 +327,15 @@ $font_text: 'Open Sans', sans-serif;
     }
   }
 
-  @media (max-width: 404px) {
-    .slick-dots {
-      bottom: 80px;
-    }
-  }
+  //@media (max-width: 404px) {
+  //  .slick-dots {
+  //    bottom: 80px;
+  //  }
+  //}
 
   @media (max-width: 374px) {
     .slick-dots {
-      bottom: 102px;
+      bottom: 105px;
     }
   }
 }

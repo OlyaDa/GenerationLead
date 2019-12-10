@@ -194,15 +194,6 @@ $font_text: 'Open Sans', sans-serif;
     }
   }
 
-  //@media (max-width: 726px) {
-  //  .slick-prev {
-  //    top: 28%
-  //  }
-  //  .slick-next {
-  //    top: 28%
-  //  }
-  //}
-
   @media (max-width: 576px) {
 
     .item.odd {
@@ -277,14 +268,14 @@ $font_text: 'Open Sans', sans-serif;
     }
 
     .slick-dots {
-      width: 50%;
+      width: calc(50% - 15px);
       position: absolute;
       bottom: -33px;
       margin: 0;
       list-style: none;
       text-align: center;
-      left: 25%;
-      right: 25%;
+      left: calc(25% + 7.5px);
+      //right: 25%;
       background-color: #F0F0F0;
       display: flex;
       justify-content: center;

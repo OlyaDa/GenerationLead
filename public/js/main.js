@@ -145,9 +145,9 @@ $(document).ready(function() {
     });
 });
 
-//accardion for mobile version section "services"
+//accordion for mobile version section "services"
 
-const accardionToggle = (slideMenu) => (e) => {
+const accordionToggle = (slideMenu) => (e) => {
     slideMenu.forEach((links) => {
         const hidePanel = links.nextElementSibling;
         if (links === e.currentTarget) {
@@ -160,8 +160,8 @@ const accardionToggle = (slideMenu) => (e) => {
     });
 };
 
-const slideMenu = document.querySelectorAll('.accardion-link');
+const slideMenu = document.querySelectorAll('.accordion-link');
 
 slideMenu.forEach((links) => {
-    links.addEventListener('click', accardionToggle(slideMenu))
+    links.addEventListener('click', accordionToggle(slideMenu))
 });

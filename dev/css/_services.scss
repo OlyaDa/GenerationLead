@@ -18,22 +18,22 @@ $font_text: 'Open Sans', sans-serif;
       margin-bottom: 25px;
     }
 
-    .accardion-block {
+    .accordion-block {
       background-color: transparent;
       border-radius: 0;
       display: block;
       margin-bottom: 26px;
     }
-    .accardion-block:last-child {
+    .accordion-block:last-child {
       margin-bottom: 0;
     }
-    .accardion-link {
+    .accordion-link {
       background-color: transparent;
       border-radius: 0;
       position: relative;
     }
 
-    .accardion-link a {
+    .accordion-link .link {
       display: flex;
       align-items: center;
       text-decoration: none;
@@ -52,7 +52,7 @@ $font_text: 'Open Sans', sans-serif;
       }
     }
 
-    .accardion-link a:after {
+    .accordion-link .link:after {
       content: "";
       border: solid #fff;
       border-width: 0 2px 2px 0;
@@ -67,7 +67,7 @@ $font_text: 'Open Sans', sans-serif;
       background-color: transparent;
       border-radius: 0;
     }
-    .accardion-lists {
+    .accordion-lists {
       background-color: transparent;
       border-radius: 0;
       max-height: 0;
@@ -142,7 +142,7 @@ $font_text: 'Open Sans', sans-serif;
       }
     }
 
-    .accardion-link.active a::after {
+    .accordion-link.active .link::after {
       content: "";
       border: solid #fff;
       border-width: 0 2px 2px 0;
@@ -152,7 +152,7 @@ $font_text: 'Open Sans', sans-serif;
       position: absolute;
       top: 5px;
     }
-    .accardion-link.active a {
+    .accordion-link.active .link {
       color: #fff;
     }
     .active-block {
