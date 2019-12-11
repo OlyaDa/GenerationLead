@@ -2837,9 +2837,21 @@ img {
       transition: .3s; }
       .popup .btn:hover:after, .popup .btn:hover:before {
         display: none; }
-  @media (max-width: 1024px) {
+  @media (max-width: 1400px) {
     .popup {
-      padding: 170px 0; }
+      padding: 90px 0; }
+      .popup .caption {
+        font-size: 60px;
+        line-height: 80px; }
+      .popup button[type=button] {
+        color: #FAFAFA;
+        -webkit-transform: scale(2);
+        transform: scale(2);
+        margin-top: 60px;
+        margin-right: 88px; } }
+  @media (max-width: 992px) {
+    .popup {
+      padding: 110px 0; }
       .popup .caption {
         font-size: 60px;
         line-height: 80px; } }
