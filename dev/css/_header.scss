@@ -1,3 +1,10 @@
+$font_text: 'Open Sans', sans-serif;
+
+.header.bg {
+  background: url("../../public/images/bg-menu.png") center center no-repeat !important;
+  background-size: cover !important;
+}
+
 .header {
   background-color: transparent;
   position: absolute;
@@ -7,13 +14,12 @@
   z-index: 2;
   display: flow-root;
 
-
-
   .header__inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    //flex-direction: column;
   }
 
   .logo {
@@ -53,61 +59,144 @@
     text-decoration: none;
   }
 
+.top {
+  display: flex;
+  justify-content: space-between;
+}
 
+  .logo-mobile {
+    display: none;
+  }
+
+  // c крестиком
 
   .toggle-menu {
-    display: none;
+    position: relative;
     width: 28px;
+    height: 28px;
+    cursor: pointer;
+    display: none;
+
+    span {
+      position: absolute;
+      background-color: #0059CB;
+      width: 100%;
+      height: 2px;
+      top: 50%;
+      right: 0;
+      margin-top: -5px;
+      opacity: 1;
+      &:before {
+        position: absolute;
+        background: #0059CB;
+        width: 28px;
+        height: 2px;
+        bottom: 6px;
+        content: "";
+        display: block;
+      }
+      &:after{
+        position: absolute;
+        background: #0059CB;
+        width: 28px;
+        height: 2px;
+        top: 6px;
+        content: "";
+        display: block;
+      }
+    }
   }
 
-  .toggle-menu:before {
-    display: block;
-    content: '';
-    height: 2px;
-    background-color: #0059CB;
+  .toggle-menu.menu-on {
+    span {
+      background-color: transparent;
+      transition: all .3s ease-in-out;
+      &:before {
+        background-color: #FFFFFF;
+        transform: rotate(-45deg);
+        top: 0;
+        position: absolute;
+        transition: all .3s ease-in-out;
+      }
+      &:after {
+        background-color: #FFFFFF;
+        transform: rotate(45deg);
+        top: 0;
+        position: absolute;
+        transition: all .3s ease-in-out;
+      }
+    }
+
   }
 
-  .toggle-menu:after {
-    display: block;
-    content: '';
-    height: 2px;
-    background-color: #0059CB;
+  //.toggle-menu {
+  //  display: none;
+  //  width: 28px;
+  //}
+
+  //.toggle-menu:before {
+  //  display: block;
+  //  content: '';
+  //  height: 2px;
+  //  background-color: #0059CB;
+  //}
+  //
+  //.toggle-menu:after {
+  //  display: block;
+  //  content: '';
+  //  height: 2px;
+  //  background-color: #0059CB;
+  //}
+  //
+  //.toggle-menu span {
+  //  display: block;
+  //  height: 2px;
+  //  background-color: #0059CB;
+  //  margin: 6px 0;
+  //}
+
+  .change-img {
+    .logo-desk {
+      display: none;
+    }
+    .logo-mobile {
+      display: block;
+    }
   }
 
-  .toggle-menu span {
-    display: block;
-    height: 2px;
-    background-color: #0059CB;
-    margin: 6px 0;
-  }
+
 
   ///media
 
   @media (max-width: 955px) {
+
+    .header__inner {
+      display: flex;
+      //justify-content: space-between;
+      //align-items: center;
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: inherit;
+    }
+
     .main-nav {
-      position: absolute;
-      left: -5%;
-      right: -5%;
-      width: 110%;
-      top: 100%;
-      border-top: 1px solid #0059CB;
-      background: url("../../public/images/bg-menu.png") center center no-repeat !important;
-      background-size: cover !important;
-      padding: 25px 0;
       display: none;
+      padding: 89px 0 134px 0;
     }
 
     .menu li {
       margin-left: 0;
     }
 
+    //.logo-desk {
+    //  display: none;
+    //}
+    //.logo-mobile {
+    //  display: block;
+    //}
+
     .main-nav.open {
       display: block;
-    }
-
-    .bg {
-      background: url("../../public/images/bg-menu.png") center center no-repeat !important;
-      background-size: cover !important;
     }
 
     .menu {
@@ -117,9 +206,14 @@
 
     .menu a {
       display: block;
-      font-size: 16px;
-      padding: 15px 0;
+      //font-size: 16px;
+      padding: 16px 0;
       color: #FAFAFA;
+      font-family: $font_text;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 33px;
     }
 
     .toggle-menu {
@@ -136,9 +230,9 @@
       height: 21px;
     }
 
-    .main-nav {
-      top: calc(100% + 20px);
-    }
+    //.main-nav {
+    //  top: calc(100% + 20px);
+    //}
   }
 
 }

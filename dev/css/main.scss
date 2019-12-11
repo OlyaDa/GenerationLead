@@ -136,7 +136,8 @@ img {
 
 //////////////////////////POPUP BEGIN////////////////////////
 .popup {
-  background-color: #fff;
+  background: url("../../public/images/bg-menu.png") center center no-repeat;
+  background-size: cover;
   max-width: 410px;
   padding: 56px 48px;
   margin: 0 auto;

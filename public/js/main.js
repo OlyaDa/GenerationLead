@@ -16,6 +16,7 @@ $(document).ready(function() {
 
 $(function(){
     $('.toggle-menu').on('click',function(){
+        $('.logo').toggleClass('change-img');
         $('.main-nav').toggleClass('open');
         $('.header').toggleClass('bg');
         $( ".toggle-menu" ).toggleClass( "menu-on");

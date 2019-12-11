@@ -112,7 +112,7 @@ $font_text: 'Open Sans', sans-serif;
     left: calc(50% - 10px);
     bottom: 208px;
     img {
-      animation: move 1s infinite ease-in-out;
+      animation: move 1s infinite linear;
       position: relative;
     }
   }
