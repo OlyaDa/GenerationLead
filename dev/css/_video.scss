@@ -108,6 +108,9 @@ $font_text: 'Open Sans', sans-serif;
     position: absolute;
     top: calc(50% - 34px);
     left: calc(50% - 34px);
+    &:hover {
+      transform: scale(1.2);
+    }
   }
 
   .line {
@@ -133,12 +136,23 @@ $font_text: 'Open Sans', sans-serif;
 
   .slick-prev {
     left: -8.7%;
-    top: 41%
+    top: 41%;
   }
 
   .slick-next {
     right: -8.7%;
-    top: 41%
+    top: 41%;
+  }
+
+  .slick-prev, .slick-next {
+    &:hover {
+      background-color: #0059CB;
+      transition: .3s;
+      .fa-chevron-right, .fa-chevron-left {
+        color: #fff;
+        transition: .3s;
+      }
+    }
   }
 
   .slick-prev:before, .slick-next:before {

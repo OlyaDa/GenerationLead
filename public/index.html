@@ -83,7 +83,7 @@
                             Узнай сколько клиентов мы приведем в твой бизнес!
                         </p>
                         <div class="button">
-                            <a class="btn popup-link" href="#">Узнать количество</a>
+                            <a class="btn popup-link" href="#popup">Узнать количество</a>
                         </div>
                     </div>
                     <!--<div class="col-md-6 ">-->
@@ -968,9 +968,9 @@
                         <form class="order-main">
                             <h2 class="caption">Остались вопросы?</h2>
                             <h4 class="form-title">
-                            <span id="customTextForm">
+                            <!--<span id="customTextForm">-->
                                  Закажите бесплатную консультацию
-                            </span>
+                            <!--</span>-->
                             </h4>
                             <input placeholder="Ваше Имя" type="text" name="name" required>
                             <input placeholder="Ваш Телефон" type="tel" name="phone" class="phoneidcl" required>
@@ -1064,51 +1064,25 @@
     </footer>
 
     <!--/////pop-up-->
-    <!--<div id="popup" class="mfp-hide popup">-->
-    <!--<form class="order-main">-->
-    <!--<h4 class="form-title text-center">-->
-    <!--<span id="customTextForm3">-->
-    <!--Заполните форму и получите  бесплатно чек-лист на почту-->
-    <!--</span>-->
-    <!--</h4>-->
-    <!--<label for="name">Укажите ваше имя</label>-->
-    <!--<input id="name" placeholder="Имя" type="text" name="name" required>-->
+    <div id="popup" class="mfp-hide popup">
+    <form class="order-main">
+        <h2 class="caption">Заполните форму</h2>
+        <h4 class="form-title">
+            <span id="customTextForm2">
+                Для бесплатной консультации
+            </span>
+        </h4>
+        <input placeholder="Ваше Имя" type="text" name="name" required>
+        <input placeholder="Ваш Телефон" type="tel" name="phone" class="phoneidcl" required>
+        <input name="order" type="hidden" id="input_order">
 
-    <!--<label for="phone">Укажите ваш телефон</label>-->
-    <!--<input id="phone" placeholder="Телефон" type="tel" name="phone" class="phoneidcl" required>-->
+        <button class="disbutt" disabled>
+            <span class="btn">Отправить</span>
+        </button>
+    </form>
+    </div>
 
-    <!--<label for="email">Укажите ваш email</label>-->
-    <!--<input id="email" placeholder="E-mail" type="text" name="email" required>-->
-    <!--<input name="order" type="hidden" id="input_order">-->
-
-    <!--<button class="btn disbutt" disabled>-->
-    <!--<span>ОТПРАВИТЬ</span>-->
-    <!--</button>-->
-    <!--</form>-->
-    <!--</div>-->
-
-    <!--<div id="popup2" class="mfp-hide popup">-->
-    <!--<form class="order-main">-->
-    <!--<h4 class="form-title text-center">-->
-    <!--<span id="customTextForm2">-->
-    <!--Заполните форму и получите  бесплатно чек-лист на почту-->
-    <!--</span>-->
-    <!--</h4>-->
-    <!--<label for="name2">Укажите ваше имя</label>-->
-    <!--<input id="name2" placeholder="Имя" type="text" name="name" required>-->
-
-    <!--<label for="phone2">Укажите ваш телефон</label>-->
-    <!--<input id="phone2" placeholder="Телефон" type="tel" name="phone" class="phoneidcl" required>-->
-    <!--<input name="order" type="hidden" id="input_order2">-->
-    <!--&lt;!&ndash;<label for="email2">Укажите ваш email</label>&ndash;&gt;-->
-    <!--&lt;!&ndash;<input id="email2" placeholder="E-mail" type="text" name="email" required>&ndash;&gt;-->
-
-    <!--<button class="btn disbutt" disabled>-->
-    <!--<span>ОТПРАВИТЬ</span>-->
-    <!--</button>-->
-    <!--</form>-->
-    <!--</div>-->
-    <!--/////pop-up end-->
+    <!--pop-up end-->
 
 </div>
 

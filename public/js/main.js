@@ -17,6 +17,7 @@ $(document).ready(function() {
 $(function(){
     $('.toggle-menu').on('click',function(){
         $('.main-nav').toggleClass('open');
+        $('.header').toggleClass('bg');
         $( ".toggle-menu" ).toggleClass( "menu-on");
     });
 });

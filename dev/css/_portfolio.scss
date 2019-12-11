@@ -111,6 +111,17 @@ $font_text: 'Open Sans', sans-serif;
     top: 51%;
   }
 
+  .slick-prev, .slick-next {
+    &:hover {
+      background-color: #0059CB;
+      transition: .3s;
+      .fa-chevron-right, .fa-chevron-left {
+        color: #fff;
+        transition: .3s;
+      }
+    }
+  }
+
   .slick-prev:before, .slick-next:before {
     font-size: 0;
   }

@@ -145,6 +145,10 @@ $font_text: 'Open Sans', sans-serif;
       background: #0059CB;
       color: #FFFFFF;
       transition: .3s;
+
+      &:before, &:after {
+        display: none;
+      }
     }
   }
 

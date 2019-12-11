@@ -88,6 +88,10 @@ $font_text: 'Open Sans', sans-serif;
     text-align: center;
     color: #0059CB;
     border: 2px solid #0059CB;
+    &:hover {
+      background-color: #0059CB;
+      color: #FFFFFF;
+    }
   }
 
   .before {
@@ -180,6 +184,17 @@ $font_text: 'Open Sans', sans-serif;
   .slick-next {
     left: 5.2%;
     top: 90%;
+  }
+
+  .slick-prev, .slick-next {
+    &:hover {
+      transition: .3s;
+      background-color: #0059CB;
+      .fa-chevron-right, .fa-chevron-left {
+        color: #fff;
+        transition: .3s;
+      }
+    }
   }
 
   .slick-prev:before, .slick-next:before {

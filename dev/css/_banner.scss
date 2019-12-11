@@ -91,15 +91,11 @@ $font_text: 'Open Sans', sans-serif;
       background: #0059CB;
       color: #FFFFFF;
       transition: .3s;
+
+      &:before, &:after {
+        display: none;
+      }
     }
-    //&:hover {
-    //  &:after {
-    //    background: #0059CB;
-    //    transition: .3s;
-    //  }
-    //  color: #FFFFFF;
-    //  transition: .3s;
-    //}
   }
 
   .banner-inner {
@@ -169,6 +165,7 @@ $font_text: 'Open Sans', sans-serif;
     background: #0059CB;
     position: absolute;
     bottom: -18.5%;
+    z-index: -4;
   }
 
   .shot-line-right {
@@ -178,6 +175,7 @@ $font_text: 'Open Sans', sans-serif;
     right: 25%;
     background: #0059CB;
     bottom: -18.5%;
+    z-index: -4;
   }
 
   .line {

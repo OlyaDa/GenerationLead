@@ -122,11 +122,11 @@ $font_text: 'Open Sans', sans-serif;
           background: #fff;
         }
         &:hover {
-          &:after {
-            background: #0059CB;
-            transition: .3s;
+          &:after,  &:before {
+            display: none;
           }
-          color: #FFFFFF;
+          background-color: #FFFFFF;
+          color: #0059CB;
           transition: .3s;
         }
       }
@@ -246,6 +246,10 @@ $font_text: 'Open Sans', sans-serif;
         background: #0059CB;
         color: #FFFFFF;
         transition: .3s;
+
+        &:before, &:after {
+          display: none;
+        }
       }
     }
 

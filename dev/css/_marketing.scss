@@ -78,6 +78,7 @@ $font_text: 'Open Sans', sans-serif;
     border: 2px solid #fff;
     border-radius: 0;
     z-index: 9;
+    background-color: #FFFFFF;
 
     &:before {
       z-index: -2;
@@ -102,11 +103,11 @@ $font_text: 'Open Sans', sans-serif;
       background: #fff;
     }
     &:hover {
-      &:after {
-        background: #0059CB;
-        transition: .3s;
+      &:after,  &:before {
+        display: none;
       }
-      color: #FFFFFF;
+      background-color: #FFFFFF;
+      color: #0059CB;
       transition: .3s;
     }
   }
