@@ -112,17 +112,20 @@ $font_text: 'Open Sans', sans-serif;
     left: calc(50% - 10px);
     bottom: 208px;
     img {
-      animation: move 1s infinite linear;
-      position: relative;
+      transform: translate3d(0, - 40%, 0);
+      animation: move 1.4s infinite linear;
     }
   }
 
   @keyframes move {
-    from {
-      bottom: 10px;
+    0% {
+      transform: translate3d(0, -40%, 0);
     }
-    to {
-      bottom: -10px;
+    50% {
+      transform: translate3d(0, 40%, 0);
+    }
+    100% {
+      transform: translate3d(0, -40%, 0);
     }
   }
 

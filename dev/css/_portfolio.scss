@@ -87,6 +87,10 @@ $font_text: 'Open Sans', sans-serif;
 
   //slider
 
+  .portfolio-slider {
+    outline: none;
+  }
+
   .slick-prev, .slick-next {
     border: 2px solid #0059CB;
     border-radius: 50%;
